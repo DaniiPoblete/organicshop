@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+img {
+    height: 100px;
+}
+
+.ant-menu-horizontal, .ant-menu-vertical {
+    border: 0;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.desktop-hidden {
+    display: initial;
+}
+
+@media (min-width: 768px) {
+    .mobile-hidden {
+        display: initial;
+    }
+
+    .desktop-hidden {
+        display: none;
+    }
+
+    .menu {
+        flex-grow: 1;
+        justify-content: center;
+        display: flex;
+    }
+}
