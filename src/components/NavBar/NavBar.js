@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Button, Menu, Drawer } from 'antd';
-import { ShoppingCartOutlined, MenuOutlined } from '@ant-design/icons';
+import { MenuOutlined } from '@ant-design/icons';
 import logo from '../../assets/logo.svg';
 import 'antd/dist/antd.css';
-import './NavBar.css';
+import styles from './NavBar.module.css';
 import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
@@ -27,9 +27,9 @@ function NavBar() {
 	return (
 		<nav>
 			<img src={logo} alt="logo" />
-			<Menu items={items} mode="horizontal" className="menu mobile-hidden" />
+			<Menu items={items} mode="horizontal" className={`${styles.menu} ${styles.mobileHidden}`} />
 			<CartWidget />
-			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className="desktop-hidden" />
+			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className={styles.desktopHidden} />
 			<Drawer title="Menú" placement="right" onClose={onClose} visible={visible}>
 				<Menu items={items} mode="vertical" />
 			</Drawer>

@@ -10,24 +10,24 @@ img {
     height: 100px;
 }
 
-.ant-menu-horizontal, .ant-menu-vertical {
+:global .ant-menu-horizontal, :global .ant-menu-vertical {
     border: 0;
 }
 
-.mobile-hidden {
+.mobileHidden {
     display: none;
 }
 
-.desktop-hidden {
+.desktopHidden {
     display: initial;
 }
 
 @media (min-width: 768px) {
-    .mobile-hidden {
+    .mobileHidden {
         display: initial;
     }
 
-    .desktop-hidden {
+    .desktopHidden {
         display: none;
     }
 
