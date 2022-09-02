@@ -4,6 +4,7 @@ import { ShoppingCartOutlined, MenuOutlined } from '@ant-design/icons';
 import logo from '../../assets/logo.svg';
 import 'antd/dist/antd.css';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
 	const [visible, setVisible] = useState(false);
@@ -27,8 +28,8 @@ function NavBar() {
 		<nav>
 			<img src={logo} alt="logo" />
 			<Menu items={items} mode="horizontal" className="menu mobile-hidden" />
-			<Button type="primary" shape="round" icon={<ShoppingCartOutlined />}  className="mobile-hidden"/>
-			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />}  className="desktop-hidden"/>
+			<CartWidget />
+			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className="desktop-hidden" />
 			<Drawer title="Menú" placement="right" onClose={onClose} visible={visible}>
 				<Menu items={items} mode="vertical" />
 			</Drawer>
