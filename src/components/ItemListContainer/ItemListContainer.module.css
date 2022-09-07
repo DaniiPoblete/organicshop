@@ -4,4 +4,6 @@
 
 .card {
     max-width: 350px;
+    min-width: 200px;
+    margin: auto;
 }

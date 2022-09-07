@@ -28,20 +28,20 @@ function ItemListContainer({greeting}) {
 		stock: 15
 	}];
 
-	const onAdd = ({count, name}) => {
-		return notification['success']({
-			description: `${count}x ${name}`,
+	const onAdd = (count, name, brand) => {
+		return notification.success({
+			description: `${count}x [${brand}] ${name}`,
 			message: 'Producto agregado exitosamente'
 		});
 	};
 
 	return (
-		<Row gutter={24} className={styles.container}>
+		<Row gutter={[24, 24]} className={styles.container}>
 			<Col span={24}>
 				<h2>{greeting}</h2>
 			</Col>
 			{products.map((product) => (
-				<Col className="gutter-row" span={8} key={product.id}>
+				<Col xs={24} md={8} key={product.id}>
 					<Card
 						className={styles.card}
 						cover={
@@ -55,8 +55,10 @@ function ItemListContainer({greeting}) {
 							description={product.desc}
 						/>
 						<Divider />
-						<ItemCount stock={product.stock} initial={1} name={product.name}
-								   onAdd={(data) => onAdd(data)} />
+						<ItemCount
+							stock={product.stock} initial={1}
+							onAdd={(count) => onAdd(count, product.name, product.brand)}
+						/>
 					</Card>
 				</Col>
 			))}
