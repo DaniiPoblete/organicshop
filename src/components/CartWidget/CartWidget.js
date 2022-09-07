@@ -6,7 +6,7 @@ import styles from './CartWidget.module.css'
 function CartWidget() {
 	return (
 		<Button type="primary" shape="round" icon={<ShoppingCartOutlined />} className={styles.cart}>
-			1
+			{/*1*/}
 		</Button>
 	);
 }

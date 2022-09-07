@@ -26,7 +26,7 @@ function NavBar() {
 
 	return (
 		<nav>
-			<img src={logo} alt="logo" />
+			<img src={logo} alt="logo" className={styles.logo}/>
 			<Menu items={items} mode="horizontal" className={`${styles.menu} ${styles.mobileHidden}`} />
 			<CartWidget />
 			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className={styles.desktopHidden} />

@@ -3,7 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
-	const greeting = 'Spiral out.. keep going..';
+	const greeting = 'Productos';
 	return (
 		<>
 			<NavBar />
