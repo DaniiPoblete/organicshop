@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ItemListContainer.module.css';
+import styles from './ItemListContainer.module.less';
 import ItemCount from '../ItemCount/ItemCount';
 import { Card, Col, Divider, notification, Row } from 'antd';
 import Meta from 'antd/es/card/Meta';
@@ -36,33 +36,35 @@ function ItemListContainer({greeting}) {
 	};
 
 	return (
-		<Row gutter={[24, 24]} className={styles.container}>
-			<Col span={24}>
-				<h2>{greeting}</h2>
-			</Col>
-			{products.map((product) => (
-				<Col xs={24} md={8} key={product.id}>
-					<Card
-						className={styles.card}
-						cover={
-							<img
-								alt={product.name}
-								src={require(`../../assets/products/${product.src}`)}
-							/>
-						}>
-						<Meta
-							title={`[${product.brand}] ${product.name}`}
-							description={product.desc}
-						/>
-						<Divider />
-						<ItemCount
-							stock={product.stock} initial={1}
-							onAdd={(count) => onAdd(count, product.name, product.brand)}
-						/>
-					</Card>
+		<div className={styles.container}>
+			<Row gutter={[24, 24]}>
+				<Col span={24}>
+					<h2>{greeting}</h2>
 				</Col>
-			))}
-		</Row>
+				{products.map((product) => (
+					<Col xs={24} md={8} key={product.id}>
+						<Card
+							className={styles.card}
+							cover={
+								<img
+									alt={product.name}
+									src={require(`../../assets/products/${product.src}`)}
+								/>
+							}>
+							<Meta
+								title={`[${product.brand}] ${product.name}`}
+								description={product.desc}
+							/>
+							<Divider />
+							<ItemCount
+								stock={product.stock} initial={1}
+								onAdd={(count) => onAdd(count, product.name, product.brand)}
+							/>
+						</Card>
+					</Col>
+				))}
+			</Row>
+		</div>
 	);
 }
 

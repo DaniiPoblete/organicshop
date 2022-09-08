@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Button, Menu, Drawer } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import logo from '../../assets/logo.svg';
-import 'antd/dist/antd.min.css';
-import styles from './NavBar.module.css';
+import styles from './NavBar.module.less';
 import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {

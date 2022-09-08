@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
-import styles from './ItemCount.module.css';
+import styles from './ItemCount.module.less';
 
 function ItemCount({stock, initial, onAdd}) {
 	const [count, setCount] = useState(initial);

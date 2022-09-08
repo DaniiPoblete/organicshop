@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
-import styles from './CartWidget.module.css'
+import styles from './CartWidget.module.less'
 
 function CartWidget() {
 	return (
