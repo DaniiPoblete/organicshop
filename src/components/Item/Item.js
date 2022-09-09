@@ -2,7 +2,7 @@ import React from 'react';
 import Meta from 'antd/es/card/Meta';
 import { Card, Divider } from 'antd';
 import ItemCount from '../ItemCount/ItemCount';
-import styles from '../ItemListContainer/ItemListContainer.module.less';
+import styles from './Item.module.less';
 
 function Item({product, onAdd, onCountChange}) {
 	return (
