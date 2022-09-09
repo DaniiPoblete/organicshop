@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 import styles from './ItemCount.module.less';
 
-function ItemCount({stock, initial, onAdd}) {
+function ItemCount({stock, initial, onAdd, onCountChange}) {
 	const [count, setCount] = useState(initial);
 
 	const decrease = () => {
@@ -12,6 +12,10 @@ function ItemCount({stock, initial, onAdd}) {
 	const increase = () => {
 		setCount(count + 1);
 	};
+
+	useEffect(() => {
+		onCountChange(count);
+	}, [count]);
 
 	return (
 		<div className={styles.itemCount}>
