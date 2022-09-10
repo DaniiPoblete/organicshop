@@ -51,7 +51,7 @@ function ItemListContainer({greeting}) {
 						onCountChange={onCountChange}
 					/>
 					:
-					<Empty description={'No hay productos disponibles'} />)
+					<Empty description={"No hay productos disponibles"} />)
 			}
 		</div>
 	);

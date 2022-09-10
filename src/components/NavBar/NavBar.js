@@ -29,7 +29,7 @@ function NavBar() {
 			<Menu items={items} mode="horizontal" className={`${styles.menu} ${styles.mobileHidden}`} />
 			<CartWidget />
 			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className={styles.desktopHidden} />
-			<Drawer title="Menú" placement="right" onClose={onClose} visible={visible}>
+			<Drawer title="Menú" placement="right" onClose={onClose} visible={visible} className={styles.drawer}>
 				<Menu items={items} mode="vertical" />
 			</Drawer>
 		</nav>

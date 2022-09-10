@@ -7,11 +7,12 @@ nav {
 }
 
 .logo {
-  height: 100px;
+  height: 60px;
 }
 
 :global .ant-menu-horizontal, :global .ant-menu-vertical {
   border: 0;
+  background: transparent;
 }
 
 .mobileHidden {
@@ -20,6 +21,12 @@ nav {
 
 .desktopHidden {
   display: initial;
+}
+
+.drawer {
+  :global .ant-drawer-content {
+    background-image: url("../../assets/background.svg");
+  }
 }
 
 @media (min-width: 768px) {

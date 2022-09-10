@@ -7,7 +7,6 @@ import styles from './Item.module.less';
 function Item({product, onAdd, onCountChange}) {
 	return (
 		<Card
-			className={styles.card}
 			cover={
 				<img
 					alt={product.name}
@@ -20,7 +19,7 @@ function Item({product, onAdd, onCountChange}) {
 			/>
 			<Divider />
 			<p className={styles.price}>
-				{product.totalPrice?.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'})}
+				{product.totalPrice?.toLocaleString("es-CL", {style: "currency", currency: "CLP"})}
 			</p>
 			<ItemCount
 				stock={product.stock} initial={1}
