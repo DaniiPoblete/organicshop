@@ -9,16 +9,19 @@ function ItemDetailContainer() {
 	const [product, setProduct] = useState({});
 	const [isLoading, setIsLoading] = useState(true);
 
-	const fetch = customFetch(productList);
-
 	useEffect(() => {
-		fetch.then(productData => {
-			setProduct(productData[0]);
-		}).catch(error => {
-			console.log('Error: ', error);
-		}).finally(() => {
-			setIsLoading(false);
-		});
+		const getProduct = async () => {
+			try {
+				const productsData = await customFetch(productList);
+				setProduct(productsData[0]);
+			} catch (e) {
+				console.error('Error: ', e);
+			} finally {
+				setIsLoading(false);
+			}
+		};
+
+		getProduct();
 	}, []);
 
 	return (

@@ -21,16 +21,19 @@ function ItemListContainer({greeting}) {
 		setProducts([...products]);
 	};
 
-	const fetch = customFetch(productList);
-
 	useEffect(() => {
-		fetch.then((productsData) => {
-			setProducts(productsData);
-		}).catch((error) => {
-			console.log('Error: ', error);
-		}).finally(() => {
-			setIsLoading(false);
-		});
+		const getProducts = async () => {
+			try {
+				const productsData = await customFetch(productList);
+				setProducts(productsData);
+			} catch (e) {
+				console.log('Error: ', e);
+			} finally {
+				setIsLoading(false);
+			}
+		};
+
+		getProducts();
 	}, []);
 
 	return (
