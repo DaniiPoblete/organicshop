@@ -9,13 +9,14 @@ function Item({product, onAdd, onCountChange}) {
 		<Card
 			cover={
 				<img
-					alt={product.name}
-					src={require(`../../assets/products/${product.src}`)}
+					alt={product.productName}
+					src={product.items[0].images[0].imageUrl}
+					className={styles.image}
 				/>
 			}>
 			<Meta
-				title={`[${product.brand}] ${product.name}`}
-				description={product.desc}
+				title={product.productName}
+				description={product.brand}
 			/>
 			<Divider />
 			<p className={styles.price}>

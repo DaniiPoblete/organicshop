@@ -7,20 +7,23 @@ nav {
 }
 
 .logo {
-  height: 60px;
+  height: 70px;
 }
 
 :global .ant-menu-horizontal, :global .ant-menu-vertical {
   border: 0;
   background: transparent;
+  text-transform: uppercase;
 }
 
-.mobileHidden {
+.menu {
   display: none;
+  font-size: 0.8rem;
 }
 
-.desktopHidden {
+.collapsedMenuButton {
   display: initial;
+  margin-right: 18px;
 }
 
 .drawer {
@@ -30,17 +33,17 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .mobileHidden {
-    display: initial;
-  }
-
-  .desktopHidden {
-    display: none;
+  .logo {
+    width: 60px;
   }
 
   .menu {
     flex-grow: 1;
     justify-content: center;
     display: flex;
+  }
+
+  .collapsedMenuButton {
+    display: none;
   }
 }

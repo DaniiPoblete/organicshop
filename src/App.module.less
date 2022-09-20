@@ -1,3 +1,5 @@
+@import "~antd/lib/style/index";
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,26 @@
     transform: rotate(360deg);
   }
 }
+
+:global .container {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.make-container(@minWidth, @breakpoint) {
+  @media (min-width: @minWidth) {
+    :global .container {
+      max-width: @breakpoint;
+    }
+  }
+}
+
+.make-container(@screen-xs-min, @screen-xs);
+.make-container(@screen-sm-min, @screen-sm);
+.make-container(@screen-md-min, @screen-md);
+.make-container(@screen-lg-min, @screen-lg);
+.make-container(@screen-xl-min, @screen-xl);
+.make-container(@screen-xxl-min, @screen-xxl);

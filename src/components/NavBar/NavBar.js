@@ -25,11 +25,11 @@ function NavBar() {
 
 	return (
 		<nav>
+			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className={styles.collapsedMenuButton} />
 			<img src={logo} alt="logo" className={styles.logo}/>
-			<Menu items={items} mode="horizontal" className={`${styles.menu} ${styles.mobileHidden}`} />
+			<Menu items={items} mode="horizontal" className={styles.menu} />
 			<CartWidget />
-			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className={styles.desktopHidden} />
-			<Drawer title="Menú" placement="right" onClose={onClose} visible={visible} className={styles.drawer}>
+			<Drawer title="Kiowo" placement="left" onClose={onClose} visible={visible} className={styles.drawer}>
 				<Menu items={items} mode="vertical" />
 			</Drawer>
 		</nav>
