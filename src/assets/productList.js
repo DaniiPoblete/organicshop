@@ -9,11 +9,8 @@ export const productList = [
 		"brand": "OLAPLEX",
 		"brandId": 2000132,
 		"link": "/tratamiento-olaplex-n3--100ml/p",
-		"categories": [
-			"/Cabello/Tratamientos y Máscaras/",
-			"/Cabello/"
-		],
-		"categoryId": "11",
+		"category": "Tratamientos",
+		"categoryId": "3",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 31900,
@@ -29,8 +26,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Beneficios",
@@ -44,7 +41,7 @@ export const productList = [
 						"name": "Cómo Usarlo",
 						"originalName": "Cómo Usarlo",
 						"values": [
-							"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, ó teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
+							"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, o teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
 						],
 						"__typename": "SpecificationGroupProperty"
 					}
@@ -59,7 +56,7 @@ export const productList = [
 						"name": "Beneficios",
 						"originalName": "Beneficios",
 						"values": [
-							"Su  tecnología  patentada  vuelve  a  unir los  enlaces  rotos  a  través  de  5  tipos  de daños: daños por servicios químicos (coloración, decoloración, queratina), daños por uso de herramientas de calor (planchas, secadores, etc.), daño por el cepillado, daño ambiental (condiciones climáticas) y daño por estados físicos relacionados con el estrés, envejecimiento ó cambios hormonales."
+							"Su  tecnología  patentada  vuelve  a  unir los  enlaces  rotos  a  través  de  5  tipos  de daños: daños por servicios químicos (coloración, decoloración, queratina), daños por uso de herramientas de calor (planchas, secadores, etc.), daño por el cepillado, daño ambiental (condiciones climáticas) y daño por estados físicos relacionados con el estrés, envejecimiento o cambios hormonales."
 						],
 						"__typename": "SpecificationGroupProperty"
 					},
@@ -67,15 +64,7 @@ export const productList = [
 						"name": "Cómo Usarlo",
 						"originalName": "Cómo Usarlo",
 						"values": [
-							"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, ó teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
+							"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, o teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
 						],
 						"__typename": "SpecificationGroupProperty"
 					},
@@ -96,21 +85,14 @@ export const productList = [
 			{
 				"name": "Beneficios",
 				"values": [
-					"Su  tecnología  patentada  vuelve  a  unir los  enlaces  rotos  a  través  de  5  tipos  de daños: daños por servicios químicos (coloración, decoloración, queratina), daños por uso de herramientas de calor (planchas, secadores, etc.), daño por el cepillado, daño ambiental (condiciones climáticas) y daño por estados físicos relacionados con el estrés, envejecimiento ó cambios hormonales."
+					"Su  tecnología  patentada  vuelve  a  unir los  enlaces  rotos  a  través  de  5  tipos  de daños: daños por servicios químicos (coloración, decoloración, queratina), daños por uso de herramientas de calor (planchas, secadores, etc.), daño por el cepillado, daño ambiental (condiciones climáticas) y daño por estados físicos relacionados con el estrés, envejecimiento o cambios hormonales."
 				],
 				"__typename": "Property"
 			},
 			{
 				"name": "Cómo Usarlo",
 				"values": [
-					"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, ó teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Género",
-				"values": [
-					"Mujer"
+					"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, o teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
 				],
 				"__typename": "Property"
 			},
@@ -204,11 +186,8 @@ export const productList = [
 		"brand": "Paul Mitchell",
 		"brandId": 2000013,
 		"link": "/serum-suavizante-y-antifrizz-super-skinny/p",
-		"categories": [
-			"/Cabello/Aceites y Serum/",
-			"/Cabello/"
-		],
-		"categoryId": "12",
+		"category": "Aceites y Serum",
+		"categoryId": "4",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 18790,
@@ -224,8 +203,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Tipo de Cabello",
@@ -394,12 +373,8 @@ export const productList = [
 		"brand": "OLAPLEX",
 		"brandId": 2000132,
 		"link": "/shampoo-olaplex-n4-250ml/p",
-		"categories": [
-			"/Cabello/Shampoo y Acondicionadores/Shampoo/",
-			"/Cabello/Shampoo y Acondicionadores/",
-			"/Cabello/"
-		],
-		"categoryId": "96",
+		"category": "Shampoo",
+		"categoryId": "1",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 31900,
@@ -415,8 +390,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Beneficios",
@@ -431,14 +406,6 @@ export const productList = [
 						"originalName": "Cómo Usarlo",
 						"values": [
 							"Emulsione  y  aplique  una  pequeña cantidad,  masajee  el  cabello,  enjuague aplique  No.5  acondicionador  de mantenimiento  para  hidratación  y reparación  adicionales. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
 						],
 						"__typename": "SpecificationGroupProperty"
 					}
@@ -462,14 +429,6 @@ export const productList = [
 						"originalName": "Cómo Usarlo",
 						"values": [
 							"Emulsione  y  aplique  una  pequeña cantidad,  masajee  el  cabello,  enjuague aplique  No.5  acondicionador  de mantenimiento  para  hidratación  y reparación  adicionales. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
 						],
 						"__typename": "SpecificationGroupProperty"
 					},
@@ -498,13 +457,6 @@ export const productList = [
 				"name": "Cómo Usarlo",
 				"values": [
 					"Emulsione  y  aplique  una  pequeña cantidad,  masajee  el  cabello,  enjuague aplique  No.5  acondicionador  de mantenimiento  para  hidratación  y reparación  adicionales. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Género",
-				"values": [
-					"Mujer"
 				],
 				"__typename": "Property"
 			},
@@ -598,11 +550,8 @@ export const productList = [
 		"brand": "BaBylissPRO",
 		"brandId": 2000001,
 		"link": "/plancha-nano-titanium-u-styler-babnt2071/p",
-		"categories": [
-			"/Eléctricos/Planchas/Alisadores/",
-			"/Eléctricos/"
-		],
-		"categoryId": "28",
+		"category": "Eléctricos",
+		"categoryId": "5",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 61425,
@@ -618,8 +567,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Beneficios",
@@ -650,14 +599,6 @@ export const productList = [
 						"originalName": "Gift Box Dimensions",
 						"values": [
 							"313x53x62mm"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
 						],
 						"__typename": "SpecificationGroupProperty"
 					},
@@ -733,14 +674,6 @@ export const productList = [
 						"__typename": "SpecificationGroupProperty"
 					},
 					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
 						"name": "Voltage",
 						"originalName": "Voltage",
 						"values": [
@@ -811,13 +744,6 @@ export const productList = [
 				"name": "Gift Box Dimensions",
 				"values": [
 					"313x53x62mm"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Género",
-				"values": [
-					"Mujer"
 				],
 				"__typename": "Property"
 			},
@@ -912,12 +838,8 @@ export const productList = [
 		"brand": "OLAPLEX",
 		"brandId": 2000132,
 		"link": "/acondicionador-olaplex-n%C2%B05-250ml-bond-maintenance/p",
-		"categories": [
-			"/Cabello/Shampoo y Acondicionadores/Acondicionadores/",
-			"/Cabello/Shampoo y Acondicionadores/",
-			"/Cabello/"
-		],
-		"categoryId": "97",
+		"category": "Acondicionadores",
+		"categoryId": "2",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 31900,
@@ -933,8 +855,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Beneficios",
@@ -949,14 +871,6 @@ export const productList = [
 						"originalName": "Cómo Usarlo",
 						"values": [
 							"Después  OLAPLEX  No.4  Bond  Maintenance Shampoo, aplique  una generosa  cantidad  desde  la  raíz  hasta  las puntas,  deje  actuar  por  3  minutos,  luego enjuague. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
 						],
 						"__typename": "SpecificationGroupProperty"
 					}
@@ -980,14 +894,6 @@ export const productList = [
 						"originalName": "Cómo Usarlo",
 						"values": [
 							"Después  OLAPLEX  No.4  Bond  Maintenance Shampoo, aplique  una generosa  cantidad  desde  la  raíz  hasta  las puntas,  deje  actuar  por  3  minutos,  luego enjuague. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
 						],
 						"__typename": "SpecificationGroupProperty"
 					},
@@ -1016,13 +922,6 @@ export const productList = [
 				"name": "Cómo Usarlo",
 				"values": [
 					"Después  OLAPLEX  No.4  Bond  Maintenance Shampoo, aplique  una generosa  cantidad  desde  la  raíz  hasta  las puntas,  deje  actuar  por  3  minutos,  luego enjuague. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Género",
-				"values": [
-					"Mujer"
 				],
 				"__typename": "Property"
 			},
@@ -1116,11 +1015,8 @@ export const productList = [
 		"brand": "OLAPLEX",
 		"brandId": 2000132,
 		"link": "/tratamiento-n-0-new-intensive-bond-155ml/p",
-		"categories": [
-			"/Cabello/Tratamientos y Máscaras/",
-			"/Cabello/"
-		],
-		"categoryId": "11",
+		"category": "Tratamientos",
+		"categoryId": "3",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 31900,
@@ -1136,8 +1032,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Beneficios",
@@ -1260,11 +1156,8 @@ export const productList = [
 		"brand": "OLAPLEX",
 		"brandId": 2000132,
 		"link": "/mascara-olaplex-n%C2%B08-bond-repair-100ml/p",
-		"categories": [
-			"/Cabello/Tratamientos y Máscaras/",
-			"/Cabello/"
-		],
-		"categoryId": "11",
+		"category": "Tratamientos",
+		"categoryId": "3",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 31900,
@@ -1280,8 +1173,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Tipo de Cabello",
@@ -1463,11 +1356,8 @@ export const productList = [
 		"brand": "OLAPLEX",
 		"brandId": 2000132,
 		"link": "/tratamiento-en-aceite-olaplex-n7-30ml/p",
-		"categories": [
-			"/Cabello/Aceites y Serum/",
-			"/Cabello/"
-		],
-		"categoryId": "12",
+		"category": "Aceites y Serum",
+		"categoryId": "4",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 31900,
@@ -1483,8 +1373,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Beneficios",
@@ -1499,14 +1389,6 @@ export const productList = [
 						"originalName": "Cómo Usarlo",
 						"values": [
 							"Tenga  la  botella  al  revés  y  de  un  toque  suave con  el  dedo  índice,  en  la  base,  para  dejar  caer cada  gota.  Aplique  una  pequeña  cantidad sobre  el  cabello  húmedo  o  seco,  peine  como desee."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
 						],
 						"__typename": "SpecificationGroupProperty"
 					}
@@ -1530,14 +1412,6 @@ export const productList = [
 						"originalName": "Cómo Usarlo",
 						"values": [
 							"Tenga  la  botella  al  revés  y  de  un  toque  suave con  el  dedo  índice,  en  la  base,  para  dejar  caer cada  gota.  Aplique  una  pequeña  cantidad sobre  el  cabello  húmedo  o  seco,  peine  como desee."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Género",
-						"originalName": "Género",
-						"values": [
-							"Mujer"
 						],
 						"__typename": "SpecificationGroupProperty"
 					},
@@ -1566,13 +1440,6 @@ export const productList = [
 				"name": "Cómo Usarlo",
 				"values": [
 					"Tenga  la  botella  al  revés  y  de  un  toque  suave con  el  dedo  índice,  en  la  base,  para  dejar  caer cada  gota.  Aplique  una  pequeña  cantidad sobre  el  cabello  húmedo  o  seco,  peine  como desee."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Género",
-				"values": [
-					"Mujer"
 				],
 				"__typename": "Property"
 			},
@@ -1666,11 +1533,8 @@ export const productList = [
 		"brand": "BaBylissPRO",
 		"brandId": 2000001,
 		"link": "/cepillo-secador-hot-air-styling-brush-babylisspro/p",
-		"categories": [
-			"/Eléctricos/Cepillos eléctricos/",
-			"/Eléctricos/"
-		],
-		"categoryId": "99",
+		"category": "Eléctricos",
+		"categoryId": "5",
 		"priceRange": {
 			"sellingPrice": {
 				"highPrice": 61600,
@@ -1686,8 +1550,8 @@ export const productList = [
 		},
 		"specificationGroups": [
 			{
-				"name": "Caracteristicas",
-				"originalName": "Caracteristicas",
+				"name": "Características",
+				"originalName": "Características",
 				"specifications": [
 					{
 						"name": "Beneficios",

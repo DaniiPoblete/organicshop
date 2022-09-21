@@ -4,6 +4,7 @@ import { productList } from '../../assets/productList';
 import { customFetch } from '../../assets/customFetch';
 import ItemList from '../ItemList/ItemList';
 import styles from './ItemListContainer.module.less';
+import { useParams } from 'react-router-dom';
 
 function ItemListContainer({greeting}) {
 	const [products, setProducts] = useState([]);
@@ -21,10 +22,14 @@ function ItemListContainer({greeting}) {
 		setProducts([...products]);
 	};
 
+	const {catId} = useParams();
+
 	useEffect(() => {
 		const getProducts = async () => {
 			try {
-				const productsData = await customFetch(productList);
+				setIsLoading(true);
+				let productsData = await customFetch(productList);
+				catId && (productsData = productsData.filter(obj => (obj.categoryId === catId)));
 				setProducts(productsData);
 			} catch (e) {
 				console.log('Error: ', e);
@@ -34,7 +39,7 @@ function ItemListContainer({greeting}) {
 		};
 
 		getProducts();
-	}, []);
+	}, [catId]);
 
 	return (
 		<div className={`container ${styles.container}`}>

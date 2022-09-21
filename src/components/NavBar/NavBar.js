@@ -4,6 +4,8 @@ import { MenuOutlined } from '@ant-design/icons';
 import logo from '../../assets/logo.svg';
 import styles from './NavBar.module.less';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { categoriesList } from '../../assets/categoriesList';
 
 function NavBar() {
 	const [visible, setVisible] = useState(false);
@@ -16,21 +18,29 @@ function NavBar() {
 		setVisible(false);
 	};
 
-	const items = [
-		{label: 'Categoría 1', key: 'item-1'},
-		{label: 'Categoría 2', key: 'item-2'},
-		{label: 'Categoría 3', key: 'item-3'},
-		{label: 'Categoría 4', key: 'item-4'}
-	];
+	const categories = [];
+	const location = useLocation();
+	const {pathname} = location;
 
+	categoriesList.forEach(cat => (
+		categories.push({
+			label: (<NavLink to={`/category/${cat.id}`}>{cat.name}</NavLink>),
+			key: `/category/${cat.id}`
+		})
+	));
+
+	console.log(pathname);
 	return (
 		<nav>
-			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} className={styles.collapsedMenuButton} />
-			<img src={logo} alt="logo" className={styles.logo}/>
-			<Menu items={items} mode="horizontal" className={styles.menu} />
+			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />}
+					className={styles.collapsedMenuButton} />
+			<Link to={"/"}>
+				<img src={logo} alt="logo" className={styles.logo} />
+			</Link>
+			<Menu items={categories} mode="horizontal" className={styles.menu} selectedKeys={[pathname]} />
 			<CartWidget />
 			<Drawer title="Kiowo" placement="left" onClose={onClose} visible={visible} className={styles.drawer}>
-				<Menu items={items} mode="vertical" />
+				<Menu items={categories} mode="vertical" selectedKeys={[pathname]} />
 			</Drawer>
 		</nav>
 	);
