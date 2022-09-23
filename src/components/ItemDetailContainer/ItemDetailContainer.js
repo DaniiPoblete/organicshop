@@ -9,8 +9,11 @@ import { useParams } from 'react-router-dom';
 function ItemDetailContainer() {
 	const [product, setProduct] = useState({});
 	const [isLoading, setIsLoading] = useState(true);
+	const [showCount, setShowCount] = useState(true);
 
 	const onAdd = (count, product) => {
+		setShowCount(false);
+
 		return notification.success({
 			description: `${count}x ${product.productName}`,
 			message: 'Producto agregado exitosamente'
@@ -51,6 +54,7 @@ function ItemDetailContainer() {
 					product={product}
 					onAdd={onAdd}
 					onCountChange={onCountChange}
+					showCount={showCount}
 				/>
 			}
 		</div>

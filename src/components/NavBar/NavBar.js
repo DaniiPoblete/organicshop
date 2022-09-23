@@ -37,7 +37,9 @@ function NavBar() {
 				<img src={logo} alt="logo" className={styles.logo} />
 			</Link>
 			<Menu items={categories} mode="horizontal" className={styles.menu} selectedKeys={[pathname]} />
-			<CartWidget />
+			<Link to={"/cart"}>
+				<CartWidget />
+			</Link>
 			<Drawer title="Kiowo" placement="left" onClose={onClose} visible={visible} className={styles.drawer}>
 				<Menu items={categories} mode="vertical" selectedKeys={[pathname]} />
 			</Drawer>

@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './ItemDetail.module.less';
-import { Breadcrumb, Carousel, Col, Divider, Rate, Row, Tabs } from 'antd';
+import { Breadcrumb, Button, Carousel, Col, Divider, Rate, Row, Tabs } from 'antd';
 import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
 
-function ItemDetail({product, onAdd, onCountChange}) {
+function ItemDetail({product, onAdd, onCountChange, showCount}) {
 	return (
 		<>
 			<Breadcrumb className={styles.breadcrumb}>
@@ -35,11 +35,19 @@ function ItemDetail({product, onAdd, onCountChange}) {
 							)}
 						</p>
 					</div>
-					<ItemCount
-						stock={product.stock} initial={1}
-						onAdd={(count) => onAdd(count, product)}
-						onCountChange={(count) => onCountChange(count, product)}
-					/>
+					{showCount ?
+						<ItemCount
+							stock={product.stock} initial={1}
+							onAdd={(count) => onAdd(count, product)}
+							onCountChange={(count) => onCountChange(count, product)}
+						/>
+						:
+						<div className={styles.checkout}>
+							<Link to={"/cart"}>
+								<Button type="primary">Terminar mi compra</Button>
+							</Link>
+						</div>
+					}
 					<Divider />
 					<Tabs>
 						<Tabs.TabPane tab="Descripción" key={0}>
