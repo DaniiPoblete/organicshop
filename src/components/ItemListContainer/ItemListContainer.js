@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Empty, notification, Spin } from 'antd';
+import { Empty, Spin } from 'antd';
 import { productList } from '../../assets/productList';
 import { customFetch } from '../../assets/customFetch';
 import ItemList from '../ItemList/ItemList';
@@ -9,18 +9,6 @@ import { useParams } from 'react-router-dom';
 function ItemListContainer({greeting}) {
 	const [products, setProducts] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
-
-	const onAdd = (count, product) => {
-		return notification.success({
-			description: `${count}x ${product.productName}`,
-			message: 'Producto agregado exitosamente'
-		});
-	};
-
-	const onCountChange = (count, product) => {
-		product.totalPrice = product.priceRange.sellingPrice.highPrice * count;
-		setProducts([...products]);
-	};
 
 	const {catId} = useParams();
 
@@ -50,11 +38,7 @@ function ItemListContainer({greeting}) {
 				</div>
 				:
 				(products.length > 0 ?
-					<ItemList
-						products={products}
-						onAdd={onAdd}
-						onCountChange={onCountChange}
-					/>
+					<ItemList products={products} />
 					:
 					<Empty description={"No hay productos disponibles"} />)
 			}

@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './ItemDetail.module.less';
-import { Breadcrumb, Carousel, Col, Divider, Rate, Row } from 'antd';
+import { Breadcrumb, Carousel, Col, Divider, Rate, Row, Tabs } from 'antd';
 import { Link } from 'react-router-dom';
+import ItemCount from '../ItemCount/ItemCount';
 
-function ItemDetail({product}) {
+function ItemDetail({product, onAdd, onCountChange}) {
 	return (
 		<>
 			<Breadcrumb className={styles.breadcrumb}>
@@ -24,21 +25,32 @@ function ItemDetail({product}) {
 				</Col>
 				<Col xs={0} md={2} />
 				<Col xs={24} md={10}>
-					<h2>[{product.brand}] {product.productName}</h2>
-					<p className={styles.price}>
-						{product.priceRange.sellingPrice.highPrice.toLocaleString(
-							"es-CL",
-							{style: "currency", currency: "CLP"}
-						)}
-					</p>
-					<Rate value={product.rate} disabled />
-					<Divider />
-					<h3>{product.description}</h3>
-					{product.specificationGroups[0].specifications.map((obj, i) => (
-						<p key={i}>
-							<b>{obj.name}:</b> {obj.values[0]}
+					<div className={styles.header}>
+						<h2>[{product.brand}] {product.productName}</h2>
+						<Rate value={product.rate} disabled />
+						<p className={styles.price}>
+							{product.totalPrice?.toLocaleString(
+								"es-CL",
+								{style: "currency", currency: "CLP"}
+							)}
 						</p>
-					))}
+					</div>
+					<ItemCount
+						stock={product.stock} initial={1}
+						onAdd={(count) => onAdd(count, product)}
+						onCountChange={(count) => onCountChange(count, product)}
+					/>
+					<Divider />
+					<Tabs>
+						<Tabs.TabPane tab="Descripción" key={0}>
+							{product.description}
+						</Tabs.TabPane>
+						{product.specificationGroups[0].specifications.map((obj, i) => (
+							<Tabs.TabPane tab={obj.name} key={i + 1}>
+								{obj.values[0]}
+							</Tabs.TabPane>
+						))}
+					</Tabs>
 				</Col>
 			</Row>
 		</>

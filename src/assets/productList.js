@@ -11,19 +11,7 @@ export const productList = [
 		"link": "/tratamiento-olaplex-n3--100ml/p",
 		"category": "Tratamientos",
 		"categoryId": "3",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 31900,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -188,19 +176,7 @@ export const productList = [
 		"link": "/serum-suavizante-y-antifrizz-super-skinny/p",
 		"category": "Aceites y Serum",
 		"categoryId": "4",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 18790,
-				"lowPrice": 18790,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 18790,
-				"lowPrice": 18790,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 18790,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -375,19 +351,7 @@ export const productList = [
 		"link": "/shampoo-olaplex-n4-250ml/p",
 		"category": "Shampoo",
 		"categoryId": "1",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 31900,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -552,19 +516,7 @@ export const productList = [
 		"link": "/plancha-nano-titanium-u-styler-babnt2071/p",
 		"category": "Eléctricos",
 		"categoryId": "5",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 61425,
-				"lowPrice": 61425,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 81900,
-				"lowPrice": 81900,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 61425,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -840,19 +792,7 @@ export const productList = [
 		"link": "/acondicionador-olaplex-n%C2%B05-250ml-bond-maintenance/p",
 		"category": "Acondicionadores",
 		"categoryId": "2",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 31900,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -1017,19 +957,7 @@ export const productList = [
 		"link": "/tratamiento-n-0-new-intensive-bond-155ml/p",
 		"category": "Tratamientos",
 		"categoryId": "3",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 31900,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -1158,19 +1086,7 @@ export const productList = [
 		"link": "/mascara-olaplex-n%C2%B08-bond-repair-100ml/p",
 		"category": "Tratamientos",
 		"categoryId": "3",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 31900,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -1358,19 +1274,7 @@ export const productList = [
 		"link": "/tratamiento-en-aceite-olaplex-n7-30ml/p",
 		"category": "Aceites y Serum",
 		"categoryId": "4",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 31900,
-				"lowPrice": 31900,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 31900,
 		"specificationGroups": [
 			{
 				"name": "Características",
@@ -1535,19 +1439,7 @@ export const productList = [
 		"link": "/cepillo-secador-hot-air-styling-brush-babylisspro/p",
 		"category": "Eléctricos",
 		"categoryId": "5",
-		"priceRange": {
-			"sellingPrice": {
-				"highPrice": 61600,
-				"lowPrice": 61600,
-				"__typename": "PriceRange"
-			},
-			"listPrice": {
-				"highPrice": 77000,
-				"lowPrice": 77000,
-				"__typename": "PriceRange"
-			},
-			"__typename": "ProductPriceRange"
-		},
+		"price": 61600,
 		"specificationGroups": [
 			{
 				"name": "Características",

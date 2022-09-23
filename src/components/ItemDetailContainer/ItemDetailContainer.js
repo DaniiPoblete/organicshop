@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { customFetch } from '../../assets/customFetch';
-import { Spin } from 'antd';
+import { notification, Spin } from 'antd';
 import styles from './ItemDetailContainer.module.less';
 import { productList } from '../../assets/productList';
 import { useParams } from 'react-router-dom';
@@ -9,6 +9,18 @@ import { useParams } from 'react-router-dom';
 function ItemDetailContainer() {
 	const [product, setProduct] = useState({});
 	const [isLoading, setIsLoading] = useState(true);
+
+	const onAdd = (count, product) => {
+		return notification.success({
+			description: `${count}x ${product.productName}`,
+			message: 'Producto agregado exitosamente'
+		});
+	};
+
+	const onCountChange = (count, product) => {
+		product.totalPrice = product.price * count;
+		setProduct({...product});
+	};
 
 	const {prodId} = useParams();
 
@@ -35,7 +47,11 @@ function ItemDetailContainer() {
 					<Spin size="large" />
 				</div>
 				:
-				<ItemDetail product={product} />
+				<ItemDetail
+					product={product}
+					onAdd={onAdd}
+					onCountChange={onCountChange}
+				/>
 			}
 		</div>
 	);

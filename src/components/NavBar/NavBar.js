@@ -29,7 +29,6 @@ function NavBar() {
 		})
 	));
 
-	console.log(pathname);
 	return (
 		<nav>
 			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />}

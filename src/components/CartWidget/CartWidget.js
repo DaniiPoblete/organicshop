@@ -1,11 +1,10 @@
 import React from 'react';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
-import styles from './CartWidget.module.less'
 
 function CartWidget() {
 	return (
-		<Button type="primary" shape="round" icon={<ShoppingCartOutlined />} className={styles.cart}>
+		<Button type="primary" shape="round" icon={<ShoppingCartOutlined />}>
 			{/*1*/}
 		</Button>
 	);
