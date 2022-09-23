@@ -16,8 +16,7 @@ function ItemListContainer({greeting}) {
 		const getProducts = async () => {
 			try {
 				setIsLoading(true);
-				let productsData = await customFetch(productList);
-				catId && (productsData = productsData.filter(obj => (obj.categoryId === catId)));
+				const productsData = await customFetch(productList, catId, 'categoryId');
 				setProducts(productsData);
 			} catch (e) {
 				console.log('Error: ', e);

@@ -31,8 +31,8 @@ function ItemDetailContainer() {
 		const getProduct = async () => {
 			try {
 				setIsLoading(true);
-				const productsData = await customFetch(productList);
-				setProduct(productsData.find(obj => (obj.productId === prodId)));
+				const productsData = await customFetch(productList, prodId, 'productId');
+				setProduct(productsData[0]);
 			} catch (e) {
 				console.error('Error: ', e);
 			} finally {
