@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { customFetch } from '../../assets/customFetch';
-import { notification, Spin } from 'antd';
+import { Breadcrumb, notification, Space, Spin } from 'antd';
 import styles from './ItemDetailContainer.module.less';
 import { productList } from '../../assets/productList';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function ItemDetailContainer() {
 	const [product, setProduct] = useState({});
@@ -15,7 +15,7 @@ function ItemDetailContainer() {
 		setShowCount(false);
 
 		return notification.success({
-			description: `${count}x ${product.productName}`,
+			description: `${count}x ${product.title}`,
 			message: 'Producto agregado exitosamente'
 		});
 	};
@@ -31,8 +31,8 @@ function ItemDetailContainer() {
 		const getProduct = async () => {
 			try {
 				setIsLoading(true);
-				const productsData = await customFetch(productList, prodId, 'productId');
-				setProduct(productsData[0]);
+				const data = await customFetch(productList, prodId, 'id', 1);
+				setProduct(data.products[0]);
 			} catch (e) {
 				console.error('Error: ', e);
 			} finally {
@@ -50,12 +50,25 @@ function ItemDetailContainer() {
 					<Spin size="large" />
 				</div>
 				:
-				<ItemDetail
-					product={product}
-					onAdd={onAdd}
-					onCountChange={onCountChange}
-					showCount={showCount}
-				/>
+				<Space direction={"vertical"} size={32}>
+					<Breadcrumb>
+						<Breadcrumb.Item>
+							<Link to={"/"}>Inicio</Link>
+						</Breadcrumb.Item>
+						<Breadcrumb.Item>
+							<Link to={`/category/${product.categoryId}`}>{product.category}</Link>
+						</Breadcrumb.Item>
+						<Breadcrumb.Item>
+							{product.title}
+						</Breadcrumb.Item>
+					</Breadcrumb>
+					<ItemDetail
+						product={product}
+						onAdd={onAdd}
+						onCountChange={onCountChange}
+						showCount={showCount}
+					/>
+				</Space>
 			}
 		</div>
 	);

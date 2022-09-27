@@ -27,6 +27,11 @@ nav {
 }
 
 .drawer {
+  :global .ant-drawer-content-wrapper {
+    width: 100% !important;
+    max-width: 500px;
+  }
+
   :global .ant-drawer-content {
     background-image: url("../../assets/background.svg");
   }
@@ -41,6 +46,7 @@ nav {
     flex-grow: 1;
     justify-content: center;
     display: flex;
+    max-width: calc(100% - 174px - 2rem);
   }
 
   .collapsedMenuButton {

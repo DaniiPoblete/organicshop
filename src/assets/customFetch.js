@@ -1,16 +1,17 @@
-export const customFetch = (data, id, idType) => {
-	return new Promise((res, rej) => {
+export const customFetch = (data, id, idType, page) => {
+	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			try {
-				if (id) {
-					let item = data.filter(obj => (obj[idType] === id));
-					res(item);
-				} else {
-					res(data);
-				}
+				id && (data = data.filter(obj => (obj[idType] === parseInt(id))));
+				const res = {
+					pageSize: 8,
+					products: data.slice(8 * (page - 1), (8 * page)),
+					total: data.length
+				};
+				resolve(res);
 			} catch (err) {
-				rej(err);
+				reject(err);
 			}
-		}, 1000);
+		}, 500);
 	});
 };

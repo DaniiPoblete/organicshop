@@ -6,18 +6,18 @@ import { Link } from 'react-router-dom';
 
 function Item({product}) {
 	return (
-		<Link to={`/product/${product.productId}`}>
+		<Link to={`/product/${product.id}`}>
 			<Card
 				cover={
 					<img
-						alt={product.productName}
-						src={product.items[0].images[0].imageUrl}
+						alt={product.handle}
+						src={product.featured_image}
 						className={styles.image}
 					/>
 				}>
 				<Meta
-					title={product.productName}
-					description={product.brand}
+					title={product.title}
+					description={product.vendor}
 				/>
 				<Divider />
 				<div className={styles.detail}>

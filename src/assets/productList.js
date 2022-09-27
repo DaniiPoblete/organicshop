@@ -1,1577 +1,293 @@
 export const productList = [
 	{
-		"cacheId": "sp-2729",
-		"productId": "2729",
-		"description": "Es  un tratamiento  de  reconstrucción  de enlaces  que  repara,  protege  y  fortalece todo  tipo  de  cabello  y  texturas.",
-		"productName": "Tratamiento Olaplex N°3  100ml",
-		"productReference": "918070",
-		"linkText": "tratamiento-olaplex-n3--100ml",
-		"brand": "OLAPLEX",
-		"brandId": 2000132,
-		"link": "/tratamiento-olaplex-n3--100ml/p",
-		"category": "Tratamientos",
-		"categoryId": "3",
-		"price": 31900,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Su  tecnología  patentada  vuelve  a  unir los  enlaces  rotos  a  través  de  5  tipos  de daños: daños por servicios químicos (coloración, decoloración, queratina), daños por uso de herramientas de calor (planchas, secadores, etc.), daño por el cepillado, daño ambiental (condiciones climáticas) y daño por estados físicos relacionados con el estrés, envejecimiento o cambios hormonales."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, o teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Su  tecnología  patentada  vuelve  a  unir los  enlaces  rotos  a  través  de  5  tipos  de daños: daños por servicios químicos (coloración, decoloración, queratina), daños por uso de herramientas de calor (planchas, secadores, etc.), daño por el cepillado, daño ambiental (condiciones climáticas) y daño por estados físicos relacionados con el estrés, envejecimiento o cambios hormonales."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, o teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Beneficios",
-				"values": [
-					"Su  tecnología  patentada  vuelve  a  unir los  enlaces  rotos  a  través  de  5  tipos  de daños: daños por servicios químicos (coloración, decoloración, queratina), daños por uso de herramientas de calor (planchas, secadores, etc.), daño por el cepillado, daño ambiental (condiciones climáticas) y daño por estados físicos relacionados con el estrés, envejecimiento o cambios hormonales."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Aplique  sobre  cabello  húmedo    secado con  toalla.  Procese  por  un  mínimo  de  10 minutos;  20-30  minutos  para  cabello dañado.  Luego lave con shampoo  y acondicionador.  Repetir  1 a 2 veces por semana para  cabello  sano,  2 a 3 veces por  semana  para cabello dañado, o teñido.  Utilizado  una  vez  por semana  como  tratamiento,  evitara  el desvanecimiento del  color."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "3273",
-				"name": "Tratamiento Olaplex N°3  100ml",
-				"nameComplete": "Tratamiento Olaplex N°3  100ml",
-				"complementName": "",
-				"ean": "918070",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "918070",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "163095",
-						"imageId": "163095",
-						"imageLabel": "PRIMERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/163095/918070.jpg?v=637526341245930000",
-						"imageText": "PRIMERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165386",
-						"imageId": "165386",
-						"imageLabel": "Segunda",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165386/896364002350_3-.jpg?v=637812203583570000",
-						"imageText": "Segunda",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165387",
-						"imageId": "165387",
-						"imageLabel": "TERCERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165387/No0-3_ClaimLockup_Spanish_transparent_bckgrnd.jpg?v=637739001050870000",
-						"imageText": "TERCERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165388",
-						"imageId": "165388",
-						"imageLabel": "CUARTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165388/Stephanie-Chung--miss.hautemess--No3-No4-flowers.jpg?v=637739001137130000",
-						"imageText": "CUARTA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165389",
-						"imageId": "165389",
-						"imageLabel": "QUINTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165389/Stephanie-Chung--miss.hautemess-No.3-mirror-spill-.jpg?v=637739001227530000",
-						"imageText": "QUINTA",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 7701921595643,
+		"title": "Aceite de Oliva Extra Virgen Light Arbequina",
+		"handle": "aceite-de-oliva-extra-virgen-tipo-light-arbequina",
+		"description": "<meta charset=\"UTF-8\"><p><strong>Aceite de Oliva Light Arbequina 500ml</strong></p><p><strong><span>Light Arbequina: </span></strong>Variedad que nace en España. Sabor suave, verde, con notas a pasto recién cortado y alcachofa. Ideal para cocinar todo tipo de comidas, ya que no es invasivo.</p><p><strong>Origen</strong></p><p><span>Las olivas se procesan inmediatamente evitando dañar los frutos, esto sumado a la cosecha manual permite una alta calidad de la fruta y una baja acidez. Luego el aceite es almacenado en estanques de acero inoxidable para su posterior decantación y guarda.</span></p><p><strong>Beneficios</strong></p><ul><li><span>Certificado NonGmo</span></li><li><span>Procesado en Frío y Doble Filtrado</span></li><li><span>Cosechado a Mano en Lolol, Chile.</span></li><li><span>0,2% Acidez máxima.</span></li><li><span>Alto en Polifenoles.</span></li></ul>",
+		"vendor": "Alto Olivar",
+		"price": 4990,
+		"categoryId": 1,
+		"category": "Aceites y aderezos",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/image_29d0a360-ff74-4b27-828e-eaeb4e675a85.jpg?v=1652914507"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/image_29d0a360-ff74-4b27-828e-eaeb4e675a85.jpg?v=1652914507"
 	},
 	{
-		"cacheId": "sp-257",
-		"productId": "257",
-		"description": "El Serum Suavizante y Antifrizz de Paul Mitchell te ayuda a suavizar, acondicionar y sellar la cutícula del cabello, dejándolo con un aspecto sedoso y libre de frizz. Además cuenta con el complejo Super Skinny®, el cual penetra al interior del cabello, contrae la fibra capilar y reduce el tiempo de secado.",
-		"productName": "Serum suavizante y antifrizz super skinny",
-		"productReference": "740130",
-		"linkText": "serum-suavizante-y-antifrizz-super-skinny",
-		"brand": "Paul Mitchell",
-		"brandId": 2000013,
-		"link": "/serum-suavizante-y-antifrizz-super-skinny/p",
-		"category": "Aceites y Serum",
-		"categoryId": "4",
-		"price": 18790,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Tipo de Cabello",
-						"originalName": "Tipo de Cabello",
-						"values": [
-							"Rizado"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Solución",
-						"originalName": "Solución",
-						"values": [
-							"Antifrizz"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Su fórmula ligera de silicona suaviza la cutícula y aporta brillo\r\r\r\r\r\r\nAcelera el secado para obtener un cabello más sedoso en menos tiempo\r\r\r\r\r\r\nAyuda a controlar el frizz\r\r\r\r\r\r\nLibre de parabenos y 100% vegano"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Vierte una sola aplicación del serum en las manos y aplica sobre el cabello húmedo, desde de las puntas hacia el cuero cabelludo. Después peina como de costumbre."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Tipo de Cabello",
-						"originalName": "Tipo de Cabello",
-						"values": [
-							"Rizado"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Solución",
-						"originalName": "Solución",
-						"values": [
-							"Antifrizz"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Su fórmula ligera de silicona suaviza la cutícula y aporta brillo\r\r\r\r\r\r\nAcelera el secado para obtener un cabello más sedoso en menos tiempo\r\r\r\r\r\r\nAyuda a controlar el frizz\r\r\r\r\r\r\nLibre de parabenos y 100% vegano"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Vierte una sola aplicación del serum en las manos y aplica sobre el cabello húmedo, desde de las puntas hacia el cuero cabelludo. Después peina como de costumbre."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Tipo de Cabello",
-				"values": [
-					"Rizado"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Solución",
-				"values": [
-					"Antifrizz"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Beneficios",
-				"values": [
-					"Su fórmula ligera de silicona suaviza la cutícula y aporta brillo\r\r\r\r\r\r\nAcelera el secado para obtener un cabello más sedoso en menos tiempo\r\r\r\r\r\r\nAyuda a controlar el frizz\r\r\r\r\r\r\nLibre de parabenos y 100% vegano"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Vierte una sola aplicación del serum en las manos y aplica sobre el cabello húmedo, desde de las puntas hacia el cuero cabelludo. Después peina como de costumbre."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "675",
-				"name": "super skinny",
-				"nameComplete": "Serum suavizante y antifrizz super skinny super skinny",
-				"complementName": "4021",
-				"ean": "4021",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "740130",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "156385",
-						"imageId": "156385",
-						"imageLabel": "primera",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/156385/740130.jpg?v=636778112514870000",
-						"imageText": "primera",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 7441149100283,
+		"title": "Not Mayo Original Low Fast Doypack",
+		"handle": "not-mayo-low-fat-700g",
+		"description": "<p>Mismo exquisito sabor, igual de cremosa pero más low y menos fat. Hecha 100% en base a plantas con maíz, garbanzo, limón, especias, ajo y cebolla. Baja en grasas saturadas, grasas trans y libre de colesterol. Instrucciones de uso: Mantener en un lugar limpio, fresco y seco. Evitar contacto directo con el sol. Una vez abierta, mantener refrigerada a una temperatura no mayor a 5º C.<br></p><p>Contenido: 700grs</p><p>Ingredientes: Agua,<span>Aceite de canola, almidón nativo de maíz, azúcar rubia, vinagre de alcohol, garbanzo deshidratado, saborizante natural, goma xanthan, ácido benzoico, acido fumárico. jugo de limón concentrado, antioxidante (tocoferol), acido sórbico, acido cítrico, especias (ajo y cebolla en polvo) y EDTA disódico cálcico.</span></p><p><span style=\"text-decoration: underline;\"><strong>Elaborado en líneas que también procesan soya, leche y huevos</strong></span></p>",
+		"vendor": "NotCo",
+		"price": 3290,
+		"categoryId": 1,
+		"category": "Aceites y aderezos",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/image_9ce6b4e8-6294-429d-b84e-284362f2fd39.png?v=1636636347"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/image_9ce6b4e8-6294-429d-b84e-284362f2fd39.png?v=1636636347"
 	},
 	{
-		"cacheId": "sp-2726",
-		"productId": "2726",
-		"description": "Es  un  producto  altamente  hidratante,  sin sulfatos,  un  champú  reparador  que  deja  el cabello  fácil  de  manejar,  brillante  y  mas saludable  con  cada  uso.",
-		"productName": "Shampoo Olaplex N°4 250ml",
-		"productReference": "918072",
-		"linkText": "shampoo-olaplex-n4-250ml",
-		"brand": "OLAPLEX",
-		"brandId": 2000132,
-		"link": "/shampoo-olaplex-n4-250ml/p",
-		"category": "Shampoo",
-		"categoryId": "1",
-		"price": 31900,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Concentraciones  extremadamente  altas de  nuestra  tecnología  patentada proporciona  una  sensación  increíble, espuma,  limpieza  como  resultado."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Emulsione  y  aplique  una  pequeña cantidad,  masajee  el  cabello,  enjuague aplique  No.5  acondicionador  de mantenimiento  para  hidratación  y reparación  adicionales. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Concentraciones  extremadamente  altas de  nuestra  tecnología  patentada proporciona  una  sensación  increíble, espuma,  limpieza  como  resultado."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Emulsione  y  aplique  una  pequeña cantidad,  masajee  el  cabello,  enjuague aplique  No.5  acondicionador  de mantenimiento  para  hidratación  y reparación  adicionales. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Beneficios",
-				"values": [
-					"Concentraciones  extremadamente  altas de  nuestra  tecnología  patentada proporciona  una  sensación  increíble, espuma,  limpieza  como  resultado."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Emulsione  y  aplique  una  pequeña cantidad,  masajee  el  cabello,  enjuague aplique  No.5  acondicionador  de mantenimiento  para  hidratación  y reparación  adicionales. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "3271",
-				"name": "Shampoo Olaplex N°4 250ml",
-				"nameComplete": "Shampoo Olaplex N°4 250ml",
-				"complementName": "",
-				"ean": "918072",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "918072",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "163093",
-						"imageId": "163093",
-						"imageLabel": "PRIMERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/163093/918072.jpg?v=637526304266830000",
-						"imageText": "PRIMERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165378",
-						"imageId": "165378",
-						"imageLabel": "Segunda",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165378/Large_JPG-No.0-Before-After-Marie.jpg?v=637738994139670000",
-						"imageText": "Segunda",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165379",
-						"imageId": "165379",
-						"imageLabel": "TERCERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165379/Large_JPG-No4-100ml-Global-back-with-shadow-2000x2000.jpg?v=637738994250100000",
-						"imageText": "TERCERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165380",
-						"imageId": "165380",
-						"imageLabel": "CUARTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165380/No.4-use-amount.jpg?v=637738994374530000",
-						"imageText": "CUARTA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165381",
-						"imageId": "165381",
-						"imageLabel": "QUINTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165381/Large_JPG-896364002428_4.jpg?v=637738994527230000",
-						"imageText": "QUINTA",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 5744805970085,
+		"title": "Agua sabor Mango Menta con Probióticos",
+		"handle": "agua-sabor-mango-menta-con-probioticos",
+		"description": "<p>Agua Saborizada, Sabor Mango Menta</p><ul><li>Con más de 10 millones de probióticos</li></ul><ul><li>Fortificada con Vitamina B y C</li></ul><ul><li>Elaborada con ingredientes Naturales</li></ul><ul><li>Libre de Sellos</li></ul><ul><li>Sin Preservantes</li></ul><p>Ingredientes: Agua purificada, pulpa de mango, jugo concentrado de manzana, esencia natural de menta, Vitamina C, stevia, probióticos (Bacillus coagulans GBI-30, 12x10^7 UFC/ porción) vitamina B1, B2, B3, B5, B6, B9 y B12.</p><p>Contenido: 475ml</p>",
+		"vendor": "Biori",
+		"price": 1990,
+		"categoryId": 2,
+		"category": "Aguas, jugos y bebidas",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/382.jpg?v=1604531539"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/382.jpg?v=1604531539"
 	},
 	{
-		"cacheId": "sp-3",
-		"productId": "3",
-		"description": "Estiliza, alisa y ondula!! La Alaciadora U-Styler lo hace todo! de forma efectiva y eficiente! Sus placas laterales ayudan a crear rizos de una forma fácil ya que gracias su tecnología Sol-Gel son más fuertes pero con un deslizamiento más suave. La Alaciadora U Styler ofrece un rendimiento profesional superior ya que cuenta con recuperación instantánea de temperatura gracias a su calentador de cerámica que le permite mantener un calor constante y alcanzar hasta 450°F.",
-		"productName": "Plancha Nano Titanium U styler BABNT2071",
-		"productReference": "4863",
-		"linkText": "plancha-nano-titanium-u-styler-babnt2071",
-		"brand": "BaBylissPRO",
-		"brandId": 2000001,
-		"link": "/plancha-nano-titanium-u-styler-babnt2071/p",
-		"category": "Eléctricos",
-		"categoryId": "5",
-		"price": 61425,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"- Placas flotantes de SOL-GEL\r\n - Punta fría y punto medio frío con material aislante\r\n - 3 niveles de temperatura\r\n - Regulador de temperatura con indicador de luces\r\n - Cable giratorio de 360º"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Código Proveedor",
-						"originalName": "Código Proveedor",
-						"values": [
-							"BABNT2071CL"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"1. Protege tu cabello con un protector térmico especial para evitar que se seque, rompa y se dañe.\r\n\r\n2. Cepilla bien tu cabello, porque de haber nudos o pequeños cabellos enredados los quemaremos y el resultado final no será el adecuado.\r\n\r\n3. Divide tu cabello en mechones que no sean muy gruesos para así facilitar el planchado y de paso cuidar el cabello.\r\n\r\n4. Pasa la plancha por los mechones de extremo a extremo, no permanezcas mucho tiempo en un mechón para evitar quemaduras.\r\n\r\n*Para realizar los rizos debes enroscar el cabello en las placas de la plancha."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Gift Box Dimensions",
-						"originalName": "Gift Box Dimensions",
-						"values": [
-							"313x53x62mm"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Voltage",
-						"originalName": "Voltage",
-						"values": [
-							"220V"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Wattage",
-						"originalName": "Wattage",
-						"values": [
-							"50-60Hz 40W"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Highest temperature",
-						"originalName": "Highest temperature",
-						"values": [
-							"230±10°C"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Power Cord Length",
-						"originalName": "Power Cord Length",
-						"values": [
-							"275cm"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"- Placas flotantes de SOL-GEL\r\n - Punta fría y punto medio frío con material aislante\r\n - 3 niveles de temperatura\r\n - Regulador de temperatura con indicador de luces\r\n - Cable giratorio de 360º"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Código Proveedor",
-						"originalName": "Código Proveedor",
-						"values": [
-							"BABNT2071CL"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"1. Protege tu cabello con un protector térmico especial para evitar que se seque, rompa y se dañe.\r\n\r\n2. Cepilla bien tu cabello, porque de haber nudos o pequeños cabellos enredados los quemaremos y el resultado final no será el adecuado.\r\n\r\n3. Divide tu cabello en mechones que no sean muy gruesos para así facilitar el planchado y de paso cuidar el cabello.\r\n\r\n4. Pasa la plancha por los mechones de extremo a extremo, no permanezcas mucho tiempo en un mechón para evitar quemaduras.\r\n\r\n*Para realizar los rizos debes enroscar el cabello en las placas de la plancha."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Gift Box Dimensions",
-						"originalName": "Gift Box Dimensions",
-						"values": [
-							"313x53x62mm"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Voltage",
-						"originalName": "Voltage",
-						"values": [
-							"220V"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Wattage",
-						"originalName": "Wattage",
-						"values": [
-							"50-60Hz 40W"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Highest temperature",
-						"originalName": "Highest temperature",
-						"values": [
-							"230±10°C"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Power Cord Length",
-						"originalName": "Power Cord Length",
-						"values": [
-							"275cm"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Beneficios",
-				"values": [
-					"- Placas flotantes de SOL-GEL\r\n - Punta fría y punto medio frío con material aislante\r\n - 3 niveles de temperatura\r\n - Regulador de temperatura con indicador de luces\r\n - Cable giratorio de 360º"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Código Proveedor",
-				"values": [
-					"BABNT2071CL"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"1. Protege tu cabello con un protector térmico especial para evitar que se seque, rompa y se dañe.\r\n\r\n2. Cepilla bien tu cabello, porque de haber nudos o pequeños cabellos enredados los quemaremos y el resultado final no será el adecuado.\r\n\r\n3. Divide tu cabello en mechones que no sean muy gruesos para así facilitar el planchado y de paso cuidar el cabello.\r\n\r\n4. Pasa la plancha por los mechones de extremo a extremo, no permanezcas mucho tiempo en un mechón para evitar quemaduras.\r\n\r\n*Para realizar los rizos debes enroscar el cabello en las placas de la plancha."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Gift Box Dimensions",
-				"values": [
-					"313x53x62mm"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Voltage",
-				"values": [
-					"220V"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Wattage",
-				"values": [
-					"50-60Hz 40W"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Highest temperature",
-				"values": [
-					"230±10°C"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Power Cord Length",
-				"values": [
-					"275cm"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "18",
-				"name": "Plancha Nano Titanium U styler BABNT2071",
-				"nameComplete": "Plancha Nano Titanium U styler BABNT2071",
-				"complementName": "1969",
-				"ean": "1969",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "4863",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "158853",
-						"imageId": "158853",
-						"imageLabel": "Primera",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/158853/4863.jpg?v=636935646431970000",
-						"imageText": "Primera",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "166061",
-						"imageId": "166061",
-						"imageLabel": "Segunda",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/166061/4863_2.jpg?v=637817459552330000",
-						"imageText": "Segunda",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 4156343844921,
+		"title": "Jugo Orgánico AMA Manzana Kiwi",
+		"handle": "jugo-organico-ama-manzana-kiwi",
+		"description": "<p>AMA lo Orgánico y disfruta de nuestras manzanas y kiwis 100% orgánicos hechos jugo, porque son muy ricos, refrescantes e ideales para llevarlos donde quieras.</p><p>¡Siente la diferencia de un jugo orgánico!</p><strong>Tienes que probarlo ¡Agítalo y tómalo bien frío!</strong><span></span><ul><li>Sin concentrados</li><li>Sin preservantes</li><li>Sin azúcar añadida</li><li>Sin agua añadida</li><li>Sin colorantes</li><li>Sin saborizantes</li></ul>",
+		"vendor": "Ama Time",
+		"price": 1490,
+		"categoryId": 2,
+		"category": "Aguas, jugos y bebidas",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/545.jpg?v=1605282335"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/545.jpg?v=1605282335"
 	},
 	{
-		"cacheId": "sp-2725",
-		"productId": "2725",
-		"description": "Es  un  acondicionador  altamente hidratante,  reparador,  para  todo  tipo  de cabello,  lo  deja  fácil  de  manejar,  brillante y  saludable  con    cada  uso.",
-		"productName": "Acondicionador Olaplex N°5 250ml Bond Maintenance",
-		"productReference": "918073",
-		"linkText": "acondicionador-olaplex-n%C2%B05-250ml-bond-maintenance",
-		"brand": "OLAPLEX",
-		"brandId": 2000132,
-		"link": "/acondicionador-olaplex-n%C2%B05-250ml-bond-maintenance/p",
-		"category": "Acondicionadores",
-		"categoryId": "2",
-		"price": 31900,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Sus  ingredientes  concentrados, proporcionan  humedad,  sin  dar  peso, deja  el  cabello  con  una  textura  increíble  y fácil  de  manejar."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Después  OLAPLEX  No.4  Bond  Maintenance Shampoo, aplique  una generosa  cantidad  desde  la  raíz  hasta  las puntas,  deje  actuar  por  3  minutos,  luego enjuague. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Sus  ingredientes  concentrados, proporcionan  humedad,  sin  dar  peso, deja  el  cabello  con  una  textura  increíble  y fácil  de  manejar."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Después  OLAPLEX  No.4  Bond  Maintenance Shampoo, aplique  una generosa  cantidad  desde  la  raíz  hasta  las puntas,  deje  actuar  por  3  minutos,  luego enjuague. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Beneficios",
-				"values": [
-					"Sus  ingredientes  concentrados, proporcionan  humedad,  sin  dar  peso, deja  el  cabello  con  una  textura  increíble  y fácil  de  manejar."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Después  OLAPLEX  No.4  Bond  Maintenance Shampoo, aplique  una generosa  cantidad  desde  la  raíz  hasta  las puntas,  deje  actuar  por  3  minutos,  luego enjuague. \r\nPara uso diario, o cada 2 a 3 días dependiendo del tipo de cabello."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "3270",
-				"name": "Acondicionador Olaplex N°5 250ml Bond Maintenance",
-				"nameComplete": "Acondicionador Olaplex N°5 250ml Bond Maintenance",
-				"complementName": "",
-				"ean": "918073",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "918073",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "163092",
-						"imageId": "163092",
-						"imageLabel": "PRIMERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/163092/918073.jpg?v=637526297268800000",
-						"imageText": "PRIMERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165373",
-						"imageId": "165373",
-						"imageLabel": "Segunda",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165373/Large_JPG-No.-5-Bond-Maintenance-Conditioner.jpg?v=637738984285130000",
-						"imageText": "Segunda",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165375",
-						"imageId": "165375",
-						"imageLabel": "TERCERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165375/896364002602_5.jpg?v=637738984658270000",
-						"imageText": "TERCERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165376",
-						"imageId": "165376",
-						"imageLabel": "CUARTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165376/Large_JPG-896364002879_5.jpg?v=637738984765300000",
-						"imageText": "CUARTA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165377",
-						"imageId": "165377",
-						"imageLabel": "QUINTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165377/No.5-use-amount.jpg?v=637738984859130000",
-						"imageText": "QUINTA",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 5561317064869,
+		"title": "Alfajor Vegano Guinda",
+		"handle": "alfajor-de-guinda",
+		"description": "<p>Dulzura Vegetal es una chocolatería vegana que elabora sus productos sin ningún ingrediente de origen animal, ideal para ser consumidos por vegetarianos y veganos.<br></p><p>Exquisitos alfajores 100% vegetales con relleno de guinda.</p><p><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\"><strong>Ingredientes:</strong><span></span><strong>(Galleta)</strong><span></span>Harina de Trigo, azúcar, manteca vegetal, bicarbonato de sodio, bicarbonato de amonio, cacao, colorante caramelo, Vainilla, sal, propinato de calcio, Antioxidantes.<span></span><strong>(Relleno)</strong><span></span>Frutas, azúcar, pectina, ácido cítrico, sorbato de potasio, benzoato de sodio.<span></span><strong>(Cobertura)</strong><span></span>azúcar, manteca vegetal, hidrogenada, cacao desgrasado en polvo (15%) lecitina de soya, Vainilla</span></p><p><strong><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\">Contiene Gluten y Soja</span></strong></p><p><span style=\"vertical-align: inherit;\" data-mce-style=\"vertical-align: inherit;\">Contenido: 35 grs</span></p>",
+		"vendor": "Dulzura Vegetal",
+		"price": 990,
+		"categoryId": 3,
+		"category": "Chocolate y cacao",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/518_a5179e62-4c0a-44b0-a434-ae3e89474889.jpg?v=1607907001"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/518_a5179e62-4c0a-44b0-a434-ae3e89474889.jpg?v=1607907001"
 	},
 	{
-		"cacheId": "sp-3346",
-		"productId": "3346",
-		"description": "Un tratamiento intenso de inspiración profesional que prepara el cabello para una reparación más profunda, fortalece y protege la integridad del cabello. Primer paso del sistema en casa de dos partes con Hair Perfector No.3",
-		"productName": "Tratamiento N.0 New Intensive Bond 155ML",
-		"productReference": "918556",
-		"linkText": "tratamiento-n-0-new-intensive-bond-155ml",
-		"brand": "OLAPLEX",
-		"brandId": 2000132,
-		"link": "/tratamiento-n-0-new-intensive-bond-155ml/p",
-		"category": "Tratamientos",
-		"categoryId": "3",
-		"price": 31900,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"No.0 contiene la concentración más alta de tecnología patentada que se absorbe rápidamente para impulsar la reparación en lo profundo del cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Aplicar No.0 sobre el cabello SECO. Sature completamente desde la raíz hasta la punta. El cabello debe estar húmedo, no empapado. Deje procesar por 10 minutos. NO ENJUAGUE.\r\nAplicar No.3 Hair Perfector directamente sobre el cabello, dejar actuar un mínimo de 10 minutos. Enjuague, champú y acondicionador. Pro-Tip: Cepille/desenrede el cabello antes de aplicar el No.0 para que se absorba fácilmente. Para cabello grueso, áspero o largo, trabaje en secciones pequeñas para asegurarse de que cada área esté completamente saturada.\r\nCabello teñido y seco: Utilizar 1 vez cada 2 semanas. Cabello ondulado y teñido: Utilizar 2 veces por semana. Cabello normal y opaco: Utilizar 2 veces por semana.\r\nCabello teñido y seco: Utilizar 1 vez cada 2 semanas. Cabello ondulado y teñido: Utilizar 2 veces por semana. Cabello normal y opaco: Utilizar 2 veces por semana."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"No.0 contiene la concentración más alta de tecnología patentada que se absorbe rápidamente para impulsar la reparación en lo profundo del cabello."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Aplicar No.0 sobre el cabello SECO. Sature completamente desde la raíz hasta la punta. El cabello debe estar húmedo, no empapado. Deje procesar por 10 minutos. NO ENJUAGUE.\r\nAplicar No.3 Hair Perfector directamente sobre el cabello, dejar actuar un mínimo de 10 minutos. Enjuague, champú y acondicionador. Pro-Tip: Cepille/desenrede el cabello antes de aplicar el No.0 para que se absorba fácilmente. Para cabello grueso, áspero o largo, trabaje en secciones pequeñas para asegurarse de que cada área esté completamente saturada.\r\nCabello teñido y seco: Utilizar 1 vez cada 2 semanas. Cabello ondulado y teñido: Utilizar 2 veces por semana. Cabello normal y opaco: Utilizar 2 veces por semana.\r\nCabello teñido y seco: Utilizar 1 vez cada 2 semanas. Cabello ondulado y teñido: Utilizar 2 veces por semana. Cabello normal y opaco: Utilizar 2 veces por semana."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Beneficios",
-				"values": [
-					"No.0 contiene la concentración más alta de tecnología patentada que se absorbe rápidamente para impulsar la reparación en lo profundo del cabello."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Aplicar No.0 sobre el cabello SECO. Sature completamente desde la raíz hasta la punta. El cabello debe estar húmedo, no empapado. Deje procesar por 10 minutos. NO ENJUAGUE.\r\nAplicar No.3 Hair Perfector directamente sobre el cabello, dejar actuar un mínimo de 10 minutos. Enjuague, champú y acondicionador. Pro-Tip: Cepille/desenrede el cabello antes de aplicar el No.0 para que se absorba fácilmente. Para cabello grueso, áspero o largo, trabaje en secciones pequeñas para asegurarse de que cada área esté completamente saturada.\r\nCabello teñido y seco: Utilizar 1 vez cada 2 semanas. Cabello ondulado y teñido: Utilizar 2 veces por semana. Cabello normal y opaco: Utilizar 2 veces por semana.\r\nCabello teñido y seco: Utilizar 1 vez cada 2 semanas. Cabello ondulado y teñido: Utilizar 2 veces por semana. Cabello normal y opaco: Utilizar 2 veces por semana."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "4086",
-				"name": "Tratamiento N.0 New Intensive Bond 155ML",
-				"nameComplete": "Tratamiento N.0 New Intensive Bond 155ML",
-				"complementName": "",
-				"ean": "918556",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "918556",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "165941",
-						"imageId": "165941",
-						"imageLabel": "Principal",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165941/918556.jpg?v=637801799105300000",
-						"imageText": "Principal",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 5712237723813,
+		"title": "Mizos Chocolate Formato Familiar",
+		"handle": "mizos-chocolate-formato-familiar",
+		"description": "<p>Crujientes galletitas de arroz integral cubiertas con vetas de cobertura sabor chocolate, ideales para colaciones de niños a partir de 1 año y para compartir con toda la familia.</p><p><strong>Ingredientes: </strong>Arroz integral , cobertura de chocolate (azúcar, manteca de palmiste fraccionada, cacao en polvo, emulsionante [triestearato de sorbitán, lecitina de soya, polirricinoleato de poliglicerol] saborizante idéntico al natural).</p><p><strong>CONTIENE SOYA * Puede contener trazas de leche, frutos secos y sulfitos.</strong></p><h4>DESCRIPCIÓN DEL PRODUCTO</h4><ul><li>✓ Libre de sodio</li><li>✓ Libre de gluten</li><li>✓ Vegano</li></ul><p>Contenido: 120grs.</p>",
+		"vendor": "Mizos",
+		"type": "Galletas de Arroz",
+		"price": 2490,
+		"categoryId": 3,
+		"category": "Chocolate y cacao",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/13.jpg?v=1603134961"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/13.jpg?v=1603134961"
 	},
 	{
-		"cacheId": "sp-2857",
-		"productId": "2857",
-		"description": "Infundida con la tecnología patentada OLAPLEX, esta\r\nmascarilla reparadora 4 en 1 altamente concentrada,\r\nagrega brillo y cuerpo a la vez que proporciona una\r\nhidratación intensa para tratar el cabello\r\ndañado. Elaborado sin sulfatos, ftalatos, parabenos ni\r\ngluten. Vegano. Seguro para el color.",
-		"productName": "MÁSCARA OLAPLEX N°8 BOND REPAIR 100ML",
-		"productReference": "918079",
-		"linkText": "mascara-olaplex-n%C2%B08-bond-repair-100ml",
-		"brand": "OLAPLEX",
-		"brandId": 2000132,
-		"link": "/mascara-olaplex-n%C2%B08-bond-repair-100ml/p",
-		"category": "Tratamientos",
-		"categoryId": "3",
-		"price": 31900,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Tipo de Cabello",
-						"originalName": "Tipo de Cabello",
-						"values": [
-							"Rizado"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Hidrata, suaviza, agrega brillo y cuerpo en 10 minutos. Altamente concentrado, menos es más."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Aplicar sobre el cabello limpio y húmedo desde la\r\nmedias hasta las puntas. Utilizar con moderación en\r\nlas raíces. Trabaja con los dedos. Dejar actuar durante\r\n10 minutos. Enjuague completamente y peine como\r\nde costumbre. Comience con 1 bomba para el\r\ncabello hasta los hombros. Use más para cabello más\r\nlargo y grueso. Menos para cabello fino o corto. Para mejores resultados, utilizar una vez por semana."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Tipo de Cabello",
-						"originalName": "Tipo de Cabello",
-						"values": [
-							"Rizado"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Hidrata, suaviza, agrega brillo y cuerpo en 10 minutos. Altamente concentrado, menos es más."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Aplicar sobre el cabello limpio y húmedo desde la\r\nmedias hasta las puntas. Utilizar con moderación en\r\nlas raíces. Trabaja con los dedos. Dejar actuar durante\r\n10 minutos. Enjuague completamente y peine como\r\nde costumbre. Comience con 1 bomba para el\r\ncabello hasta los hombros. Use más para cabello más\r\nlargo y grueso. Menos para cabello fino o corto. Para mejores resultados, utilizar una vez por semana."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Tipo de Cabello",
-				"values": [
-					"Rizado"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Beneficios",
-				"values": [
-					"Hidrata, suaviza, agrega brillo y cuerpo en 10 minutos. Altamente concentrado, menos es más."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Aplicar sobre el cabello limpio y húmedo desde la\r\nmedias hasta las puntas. Utilizar con moderación en\r\nlas raíces. Trabaja con los dedos. Dejar actuar durante\r\n10 minutos. Enjuague completamente y peine como\r\nde costumbre. Comience con 1 bomba para el\r\ncabello hasta los hombros. Use más para cabello más\r\nlargo y grueso. Menos para cabello fino o corto. Para mejores resultados, utilizar una vez por semana."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "3400",
-				"name": "MÁSCARA OLAPLEX N°8 BOND REPAIR 100ML",
-				"nameComplete": "MÁSCARA OLAPLEX N°8 BOND REPAIR 100ML",
-				"complementName": "",
-				"ean": "918079",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "918079",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "163713",
-						"imageId": "163713",
-						"imageLabel": "PRIMERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/163713/918079.jpg?v=637578142456770000",
-						"imageText": "PRIMERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165369",
-						"imageId": "165369",
-						"imageLabel": "Segunda",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165369/Olaplex_2103_EW_7.jpg?v=637812203831770000",
-						"imageText": "Segunda",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165370",
-						"imageId": "165370",
-						"imageLabel": "TERCERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165370/Large_JPG-No.8-Campaign-Model-select---Elizabeth.jpg?v=637738981509330000",
-						"imageText": "TERCERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165371",
-						"imageId": "165371",
-						"imageLabel": "CUARTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165371/Large_JPG-896364002671_8.jpg?v=637738981645130000",
-						"imageText": "CUARTA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165372",
-						"imageId": "165372",
-						"imageLabel": "QUINTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165372/Olaplex-Logo.jpg?v=637738981766600000",
-						"imageText": "QUINTA",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 7809061847291,
+		"title": "Jarabe de Agave Ámbar Orgánico",
+		"handle": "jarabe-de-agave-ambar-organico",
+		"description": "<p>El Jarabe de Agave se obtiene del jugo que se extrae de la penca madura de los mejores Agaves tequilanos Weber de Jalisco (México).</p><p>Es rico en contenido de Inulina, ya que el jugo contiene un 80 porcientode la Inulina líquida. El Jarabe de Agave contiene todos los beneficios de la Inulina.</p><p>Endulza 2.3 veces más que el azúcar convencional y es más sano.</p><p>Bajo índice glicémico.</p><p><em><b>Ingredientes jarabede agave</b></em><b><i>orgánico</i></b></p>",
+		"vendor": "Enature",
+		"type": "Endulzante",
+		"price": 5490,
+		"categoryId": 4,
+		"category": "Endulzantes",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/image_d5728233-2d4d-467e-8283-babba87136cf.jpg?v=1660074772"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/image_d5728233-2d4d-467e-8283-babba87136cf.jpg?v=1660074772"
 	},
 	{
-		"cacheId": "sp-2721",
-		"productId": "2721",
-		"description": "Es  un  aceite  altamente  reparador  concentrado y  sin  peso,  que  aumenta  el  brillo,  la  suavidad,  le da  vitalidad  al  color,  al  mismo  tiempo  protege de  los  rayos  UV  y  del  calor  hasta  450°F/232°C.",
-		"productName": "Tratamiento en aceite Olaplex N°7 30ml",
-		"productReference": "918078",
-		"linkText": "tratamiento-en-aceite-olaplex-n7-30ml",
-		"brand": "OLAPLEX",
-		"brandId": 2000132,
-		"link": "/tratamiento-en-aceite-olaplex-n7-30ml/p",
-		"category": "Aceites y Serum",
-		"categoryId": "4",
-		"price": 31900,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Su  tecnología  patentada  reconecta  los enlaces  y  evita  daños  futuros  al  estilizar  el cabello  con  herramientas  térmicas."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Tenga  la  botella  al  revés  y  de  un  toque  suave con  el  dedo  índice,  en  la  base,  para  dejar  caer cada  gota.  Aplique  una  pequeña  cantidad sobre  el  cabello  húmedo  o  seco,  peine  como desee."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Su  tecnología  patentada  reconecta  los enlaces  y  evita  daños  futuros  al  estilizar  el cabello  con  herramientas  térmicas."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Tenga  la  botella  al  revés  y  de  un  toque  suave con  el  dedo  índice,  en  la  base,  para  dejar  caer cada  gota.  Aplique  una  pequeña  cantidad sobre  el  cabello  húmedo  o  seco,  peine  como desee."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Beneficios",
-				"values": [
-					"Su  tecnología  patentada  reconecta  los enlaces  y  evita  daños  futuros  al  estilizar  el cabello  con  herramientas  térmicas."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Tenga  la  botella  al  revés  y  de  un  toque  suave con  el  dedo  índice,  en  la  base,  para  dejar  caer cada  gota.  Aplique  una  pequeña  cantidad sobre  el  cabello  húmedo  o  seco,  peine  como desee."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "3266",
-				"name": "Tratamiento en aceite Olaplex N°7 30ml",
-				"nameComplete": "Tratamiento en aceite Olaplex N°7 30ml",
-				"complementName": "",
-				"ean": "918078",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "918078",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "163088",
-						"imageId": "163088",
-						"imageLabel": "PRIMERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/163088/918078.jpg?v=637526277895070000",
-						"imageText": "PRIMERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "163191",
-						"imageId": "163191",
-						"imageLabel": "Segunda",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/163191/918078.jpg?v=637812203529000000",
-						"imageText": "Segunda",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165327",
-						"imageId": "165327",
-						"imageLabel": "TERCERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165327/OLAPLEX_No7_Bonding_Oil_10.jpg?v=637737891916800000",
-						"imageText": "TERCERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165328",
-						"imageId": "165328",
-						"imageLabel": "CUARTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165328/OLAPLEX_No7_Bonding_Oil_30.jpg?v=637737892118300000",
-						"imageText": "CUARTA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "165329",
-						"imageId": "165329",
-						"imageLabel": "QUINTA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165329/Kay---kaybeglam-.jpg?v=637737892260870000",
-						"imageText": "QUINTA",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 7057737646245,
+		"title": "Alulosa Gotas 180ml",
+		"handle": "alusweet-alulosa-gotas-180ml",
+		"description": "<meta charset=\"UTF-8\"><p><strong>¡Endulza bebidas calientes y frías sin calorías y con el rico dulzor de AluSweet!</strong></p><p>La alulosa de origen natural, extraída de alimentos como el maíz, higos y pasas, es la base de la fórmula de AluSweet Alulosa, lo que le otorga un sabor rico, muy parecido al azúcar.</p><p>A diferencia de otros reemplazos del azúcar, AluSweet no presenta malestar gastrointestinal, mientras aporta componentes prebióticos.</p><p>Es libre de calorías, gluten, lactosa, apto para veganos, diabéticos y recomendado para la dieta Keto.</p>",
+		"vendor": "Biofoods",
+		"price": 3290,
+		"categoryId": 4,
+		"category": "Endulzantes",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/13510.jpg?v=1632998165"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/13510.jpg?v=1632998165"
 	},
 	{
-		"cacheId": "sp-3239",
-		"productId": "3239",
-		"description": "SECA, SUAVIZA, DA VOLUMEN Y DA BRILLO\r\nA TU CABELLO EN UN SOLO PASO. • El Nano Titanium es un conductor de calor excepcional; mantiene la estabilidad y aporta brillo. • Crea volumen, reduce el frizz o extiende el secado del Salón al día siguiente con facilidad. • Cerdas mixtas de jabalí y nylon en cada fila desenredan suavemente el cabello reduciendo la\r\ntensión. • Tecnología Iónica para un brillo mejorado y sin frizz. • Ligero y ergonómico para un estilizado sin esfuerzo. • Ultra silencioso con un potente rendimiento de secado. • 3 configuraciones de temperatura, incluida una configuración fría para sellar el peinado. •Potencia: 900 Watts •Ideal para lograr un Brushing con calidad de salón en casa.",
-		"productName": "Cepillo Secador Hot Air Styling Brush BaBylissPRO",
-		"productReference": "918581",
-		"linkText": "cepillo-secador-hot-air-styling-brush-babylisspro",
-		"brand": "BaBylissPRO",
-		"brandId": 2000001,
-		"link": "/cepillo-secador-hot-air-styling-brush-babylisspro/p",
-		"category": "Eléctricos",
-		"categoryId": "5",
-		"price": 61600,
-		"specificationGroups": [
-			{
-				"name": "Características",
-				"originalName": "Características",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Tecnología Nano Titanium. Generador de iones. Cerdas mixtas de jabalí y nylon. 3 ajustes de t°. Cable giratorio 360°.\r\n\r\nØ  Ligero y ergonómico para un estilizado sin esfuerzo.\r\n\r\nØ  Filtro trasero extraíble para una fácil limpieza.\r\n\r\nØ  Cable de alimentación giratorio a 360° profesional y de 2,43 metros"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Ø  Seque bien el cabello con una toalla.\r\n\r\nØ   Cepille el cabello y sepárelo en secciones.\r\n\r\nØ   Coloque el cepillo debajo de cada sección y trabaje lentamente desde la raíz hasta las puntas hasta que quede suave y seco."
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			},
-			{
-				"name": "allSpecifications",
-				"originalName": "allSpecifications",
-				"specifications": [
-					{
-						"name": "Beneficios",
-						"originalName": "Beneficios",
-						"values": [
-							"Tecnología Nano Titanium. Generador de iones. Cerdas mixtas de jabalí y nylon. 3 ajustes de t°. Cable giratorio 360°.\r\n\r\nØ  Ligero y ergonómico para un estilizado sin esfuerzo.\r\n\r\nØ  Filtro trasero extraíble para una fácil limpieza.\r\n\r\nØ  Cable de alimentación giratorio a 360° profesional y de 2,43 metros"
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "Cómo Usarlo",
-						"originalName": "Cómo Usarlo",
-						"values": [
-							"Ø  Seque bien el cabello con una toalla.\r\n\r\nØ   Cepille el cabello y sepárelo en secciones.\r\n\r\nØ   Coloque el cepillo debajo de cada sección y trabaje lentamente desde la raíz hasta las puntas hasta que quede suave y seco."
-						],
-						"__typename": "SpecificationGroupProperty"
-					},
-					{
-						"name": "sellerId",
-						"originalName": "sellerId",
-						"values": [
-							"1"
-						],
-						"__typename": "SpecificationGroupProperty"
-					}
-				],
-				"__typename": "SpecificationGroup"
-			}
-		],
-		"skuSpecifications": [],
-		"properties": [
-			{
-				"name": "Beneficios",
-				"values": [
-					"Tecnología Nano Titanium. Generador de iones. Cerdas mixtas de jabalí y nylon. 3 ajustes de t°. Cable giratorio 360°.\r\n\r\nØ  Ligero y ergonómico para un estilizado sin esfuerzo.\r\n\r\nØ  Filtro trasero extraíble para una fácil limpieza.\r\n\r\nØ  Cable de alimentación giratorio a 360° profesional y de 2,43 metros"
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "Cómo Usarlo",
-				"values": [
-					"Ø  Seque bien el cabello con una toalla.\r\n\r\nØ   Cepille el cabello y sepárelo en secciones.\r\n\r\nØ   Coloque el cepillo debajo de cada sección y trabaje lentamente desde la raíz hasta las puntas hasta que quede suave y seco."
-				],
-				"__typename": "Property"
-			},
-			{
-				"name": "sellerId",
-				"values": [
-					"1"
-				],
-				"__typename": "Property"
-			}
-		],
-		"items": [
-			{
-				"itemId": "3964",
-				"name": "Cepillo Secador Hot Air Styling Brush BaBylissPRO",
-				"nameComplete": "Cepillo Secador Hot Air Styling Brush BaBylissPRO",
-				"complementName": "",
-				"ean": "918581",
-				"variations": [],
-				"referenceId": [
-					{
-						"Key": "RefId",
-						"Value": "918581",
-						"__typename": "Reference"
-					}
-				],
-				"measurementUnit": "un",
-				"unitMultiplier": 1,
-				"images": [
-					{
-						"cacheId": "165554",
-						"imageId": "165554",
-						"imageLabel": "PRIMERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/165554/918581.jpg?v=637752901504970000",
-						"imageText": "PRIMERA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "166132",
-						"imageId": "166132",
-						"imageLabel": "SEGUNDA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/166132/hot-brush-2.jpg?v=637831437730470000",
-						"imageText": "SEGUNDA",
-						"__typename": "Image"
-					},
-					{
-						"cacheId": "166133",
-						"imageId": "166133",
-						"imageLabel": "TERCERA",
-						"imageTag": "",
-						"imageUrl": "https://sallybeauty.vtexassets.com/arquivos/ids/166133/hotbrush-3.jpg?v=637831438349500000",
-						"imageText": "TERCERA",
-						"__typename": "Image"
-					}
-				],
-				"__typename": "SKU"
-			}
-		],
-		"rule": null,
-		"stock": 10,
+		"id": 4662164029497,
+		"title": "Bebida Vegetal Arroz Original",
+		"handle": "bebida-vegetal-arroz-original",
+		"description": "<p>Alimento Líquido de Arroz, Fortificado con Calcio y Zinc, Vitamina A+D+E+B12; Libre de soya, libre de lactosa, sin preservantes, sin colorantes.</p><p><strong>Ingredientes:</strong> Agua filtrada, Arroz, Azúcar, aceite maravilla, Fosfato Tricálcico, Goma de semilla de algarrobo, sal de mar, carragenina, vitamina E, Gluconato de zinc, Vitamina A, Vitamina D, Vitamina B12.</p>",
+		"vendor": "Vilay",
+		"price": 2190,
+		"categoryId": 5,
+		"category": "Leches vegetales",
 		"rate": 5,
-		"__typename": "Product"
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/703_1.jpg?v=1606311439"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/703_1.jpg?v=1606311439"
+	},
+	{
+		"id": 2461771956281,
+		"title": "Not Milk Chocolate",
+		"handle": "notmilk-chocolate",
+		"description": "<p>¡Sé el primero en probarla!</p><p>Ya llegaron las increíbles bebidas en Base a Vegetales, Libres de Gluten, Lactosa, Soya, Colesterol, Transgénicos.</p><p><strong>Ingredientes:</strong> Agua, Proteína de Arveja, Cacao, Fibra de Achicoria, azúcar, manteca de coco, concentrado de piña, saborizante natural, aceite de girasol, goma gellan, fosfato de calcio, sal, fosfato dipotásico, Vitamina D, Vitamina B12.</p><p>Contenido: 1 Litro</p><p>Mantener en un lugar fresco y seco. Una vez abierto consumir dentro de 4 días manteniéndola en el refrigerador a 4-6 °C.</p>",
+		"vendor": "NotCo",
+		"type": "Leche Vegetal",
+		"price": 2490,
+		"categoryId": 5,
+		"category": "Leches vegetales",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/725_1.jpg?v=1606318131"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/725_1.jpg?v=1606318131"
+	},
+	{
+		"id": 5798132383909,
+		"title": "Buttery Spread Original",
+		"handle": "buttery-spread-original-earth-balance",
+		"description": "<p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Mantequilla Vegana, SIN COLESTEROL, Sin Lactosa, Sin Gluten, Libre de GMO (sin transgénicos), Sin grasas trans.</span></span></p><p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Contenido: 425grs</span></span></p><p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\"><strong>Ingredientes:</strong> Mezcla de aceites vegetales (Aceite de palma, canola, aceite de oliva, aceite de soya, aceite de linaza) agua, contiene menos del 2% de sal, saborizantes naturales vegetales, proteína de arveja, lecitina de maravilla, ácido láctico, extracto de anato (color).</span></span></p><p><strong><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Usar igual que la mantequilla regular, excelente para cocinar y hornear.</span></span></strong></p>",
+		"vendor": "Earth Balance",
+		"price": 8990,
+		"categoryId": 6,
+		"category": "Mantequillas vegetales",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/451.jpg?v=1605133018"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/451.jpg?v=1605133018"
+	},
+	{
+		"id": 7039485149349,
+		"title": "Mantequilla Choco y Maní 450 grs",
+		"handle": "mantequilla-choco-y-mani-450-grs",
+		"description": "<p>3 ingredientes: Maní tostado, cacao, panela (puede contener trazas de otros frutos secos)</p><p>Producto Chileno / Envase reciclable<br><br>No requiere refrigeración, una vez abierto conservar en un lugar seco y fresco. Es normal que se separe el aceite de la crema, si sucede, revolver.<br><br><strong>¿Cómo usar? </strong><span></span>Con fruta, pan, panqueques, granola, yogur, en pasteles y a cucharadas.<br><br><strong>Duración: </strong><span></span>12 meses desde la fecha de la elaboración, ver al reverso del envase.<br><br><strong>Cont. Aprox.: </strong><span></span>450 grs.<br><br>Sin aditivos, Sin preservantes, Libre de lactosa y gluten.</p><p>Puede contener trazas de otros frutos secos.</p>",
+		"vendor": "AllNuts",
+		"price": 4990,
+		"categoryId": 6,
+		"category": "Mantequillas vegetales",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/13497.jpg?v=1631280846"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/13497.jpg?v=1631280846"
+	},
+	{
+		"id": 6540552143013,
+		"title": "Almendras Naturales - Libres de Gluten",
+		"handle": "almendras-naturales-libres-de-gluten",
+		"description": "<p>Almendras Naturales sin Sal.</p><p>Contenido: 350grs.</p><p>Libres de Gluten, veganas, libre de soya, sin trazas.</p>",
+		"vendor": "Ambrosia",
+		"price": 6490,
+		"categoryId": 7,
+		"category": "Snack saludables",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/1076.jpg?v=1614789953"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/1076.jpg?v=1614789953"
+	},
+	{
+		"id": 6039752048805,
+		"title": "Barra Proteica Cacao Maní 5 unid.",
+		"handle": "barra-proteica-cacao-mani",
+		"description": "<p>Nuevas Barritas veganas con 15grs. de proteína por porción, sin aditivos, sin azúcar añadida.</p><p>Ingredientes: Semillas maravillas, proteína de arvejas, alulosa, quinua, maní, cacao, mandioca, aceite de semilla maravillas, sal y nada más.</p><p>Fabricado en líneas que procesan nueces.</p><p>Contenido: 5 Barritas de 45 g cada una.</p><p>Almacenar en un lugar fresco y seco por debajo de 24° C.</p>",
+		"vendor": "Gibit",
+		"price": 5990,
+		"categoryId": 7,
+		"category": "Snack saludables",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/1170.jpg?v=1618494059"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/1170.jpg?v=1618494059"
+	},
+	{
+		"id": 6945065533605,
+		"title": "Pasta de Arvejas Sedanini",
+		"handle": "pasta-de-arvejas-sedanini",
+		"description": "<p><span>Con una carga proteica de 32% y un componente de fibra del 40% nuestra pasta de Arvejas es una opción de alto valor nutricional y gluten-free. Esta pasta está elaborada con 100% harina de arvejas. Se cocina en solo en 3 minutos.</span></p><p><strong>Ingredientes</strong></p><p>Harina de arvejas.</p><p><strong>Presentación</strong></p><p>Contenido neto: 250 gramos (8.8 onzas).</p><p><strong>Instrucciones de uso</strong></p><p>Tiempo de cocción: 3 minutos.</p><p>Cocción:</p><p>-Por cada 100 gramos de pasta, hervir en una olla honda 2 litros de agua y 10 gramos de sal.</p><p>-Al ebullir, agregar la pasta y revolver de vez en cuando.</p><p>-Cocinar en el tiempo arriba indicado (al dente) o hasta lograr la textura deseada.</p><p>-Escurrir en colador.</p>",
+		"vendor": "El Dorado",
+		"price": 3690,
+		"categoryId": 8,
+		"category": "Pastas",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/13429.jpg?v=1627611926"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/13429.jpg?v=1627611926"
+	},
+	{
+		"id": 1904952475705,
+		"title": "Spaghetti Arroz",
+		"handle": "spaghetti-arroz",
+		"description": "<p><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">El Dorado Pasta de Arroz </font></font><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">es un producto sin gluten de gama refinada y sabor delicado ideal para acompañar en recetas con varias capas de sabor y color. </font><font style=\"vertical-align: inherit;\">Es baja en sodio, muy ligera y gastronómicamente permite todo tipo de posibilidades creativas.</font></font></span></p><p><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\"><strong>Ingredientes:</strong> Harina de Arroz (80%), Harina de Maíz Blanco (20%)</font></font></span></p><p><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Contenido: 250 grs</font></font></span></p><h5><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Características</font></font></h5><ul><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Hecha con arroz italiano de la variedad Thai.</font></font></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Con certificación libre de transgénicos.</font></font></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Alto aporte energético, ideal para reponer nutrientes en regímenes bajos en hidratos de carbono.</font></font><br></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Sin colesterol y libre de grasas trans.</font></font></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">100% natural y sin aditivos.</font></font></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Bajo en sodio.</font></font></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Vegano.</font></font></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Comestible según la ley judía.</font></font></span></li><li><span><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">Sin TACC.</font></font></span></li></ul><p><span><font style=\"vertical-align: inherit;\"></font></span></p>",
+		"vendor": "El Dorado",
+		"price": 2490,
+		"categoryId": 8,
+		"category": "Pastas",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/13433.jpg?v=1627320262"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/13433.jpg?v=1627320262"
+	},
+	{
+		"id": 7506563137787,
+		"title": "Green Tea Hojicha",
+		"handle": "green-tea-hojicha",
+		"description": "<p><span>Clearspring Organic Hojicha se cultiva en las deliciosas colinas alrededor de Kioto y Kyushu, áreas conocidas por sus condiciones climáticas y de suelo ideales que producen algunos de los mejores tés de Japón. El carácter único de Hojicha proviene de añejar y tostar las hojas de té, dándoles un distintivo aroma a nuez y ahumado sabor. Si bien nuestro Hojicha se puede disfrutar en cualquier momento del día, es perfecto después de una comida o como un té relajante por la noche para ayudarlo a relajarse.</span><br></p><p><span>Ingredientes:Hojas de té verde tostadas cultivadas orgánicamente</span></p>",
+		"vendor": "Clearspring",
+		"price": 11990,
+		"categoryId": 9,
+		"category": "Té, hierbas y café",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/13650.png?v=1640024714"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/13650.png?v=1640024714"
+	},
+	{
+		"id": 5694323851429,
+		"title": "Te Verde Descafeinado Orgánico",
+		"handle": "green-tea-sleepy-decaf",
+		"description": "<p><span>Té verde orgánico descafeinado con manzanilla, lavanda y limón.</span></p><p><span>Ideal para dormir mejor.</span></p><p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Ingredientes cultivados orgánicamente:</span></span></p><ul><li><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Té verde descafeinado.</span></span></li><li><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Manzanilla (20%).</span></span></li><li><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Lavanda (13%).</span></span></li><li><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Bálsamo de limón (13%).</span></span></li><li><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Saborizante natural a la lavanda (2%).</span></span></li></ul><p></p>",
+		"vendor": "Clipper",
+		"price": 4490,
+		"categoryId": 9,
+		"category": "Té, hierbas y café",
+		"rate": 5,
+		"stock": 20,
+		"images": [
+			"//cdn.shopify.com/s/files/1/0077/5874/1561/products/352.jpg?v=1604528006"
+		],
+		"featured_image": "//cdn.shopify.com/s/files/1/0077/5874/1561/products/352.jpg?v=1604528006"
 	}
 ];

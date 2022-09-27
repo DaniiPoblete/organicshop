@@ -24,7 +24,7 @@ function NavBar() {
 
 	categoriesList.forEach(cat => (
 		categories.push({
-			label: (<NavLink to={`/category/${cat.id}`}>{cat.name}</NavLink>),
+			label: (<NavLink to={`/category/${cat.id}`} onClick={onClose}>{cat.name}</NavLink>),
 			key: `/category/${cat.id}`
 		})
 	));
@@ -40,7 +40,7 @@ function NavBar() {
 			<Link to={"/cart"}>
 				<CartWidget />
 			</Link>
-			<Drawer title="Kiowo" placement="left" onClose={onClose} visible={visible} className={styles.drawer}>
+			<Drawer title="Navegación" placement="left" onClose={onClose} visible={visible} className={styles.drawer}>
 				<Menu items={categories} mode="vertical" selectedKeys={[pathname]} />
 			</Drawer>
 		</nav>
