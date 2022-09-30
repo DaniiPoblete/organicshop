@@ -5,18 +5,24 @@ import { Breadcrumb, notification, Space, Spin } from 'antd';
 import styles from './ItemDetailContainer.module.less';
 import { productList } from '../../assets/productList';
 import { Link, useParams } from 'react-router-dom';
+import { useCart } from '../../contexts/CartContext';
 
 function ItemDetailContainer() {
 	const [product, setProduct] = useState({});
 	const [isLoading, setIsLoading] = useState(true);
 	const [showCount, setShowCount] = useState(true);
 
+	const cart = useCart();
+
 	const onAdd = (count, product) => {
 		setShowCount(false);
 
-		return notification.success({
+		cart.addItem(product, count);
+
+		notification.success({
 			description: `${count}x ${product.title}`,
-			message: 'Producto agregado exitosamente'
+			message: 'Producto agregado exitosamente',
+			placement: 'topLeft'
 		});
 	};
 
