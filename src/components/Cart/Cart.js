@@ -6,19 +6,19 @@ import { Link } from 'react-router-dom';
 import { CloseOutlined } from '@ant-design/icons';
 
 function Cart() {
-	const cart = useCart();
+	const {cart, totalPrice, removeItem, clear} = useCart();
 
 	return (
 		<div className={`container ${styles.container}`}>
 			<h2>Carrito de compras</h2>
-			{cart.cart.length > 0 ?
+			{cart.length > 0 ?
 				(<Row gutter={[24, 24]}>
 					<Col xs={24} lg={16}>
-						<Button className={styles.clear} onClick={() => cart.clear()}>Limpiar carrito</Button>
-						{cart.cart.map(obj => (
+						<Button className={styles.clear} onClick={() => clear()}>Limpiar carrito</Button>
+						{cart.map(obj => (
 							<div className={styles.listItem} key={obj.item.id}>
 								<div className={styles.removeItem}>
-									<Button type="link" onClick={() => cart.removeItem(obj.item.id)}
+									<Button type="link" onClick={() => removeItem(obj.item.id)}
 											icon={<CloseOutlined />}>
 									</Button>
 								</div>
@@ -38,7 +38,7 @@ function Cart() {
 					</Col>
 					<Col xs={24} lg={8}>
 						<h3>El total de tu compra es:</h3>
-						<p className={styles.total}>{cart.getTotalPrice().toLocaleString("es-CL", {
+						<p className={styles.total}>{totalPrice.toLocaleString("es-CL", {
 							style: "currency",
 							currency: "CLP"
 						})}</p>

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { notification } from 'antd';
 
 export const CartContext = createContext();
@@ -7,15 +7,19 @@ export const useCart = () => useContext(CartContext);
 
 function CartProvider({children}) {
 	const [cart, setCart] = useState([]);
+	const [totalCount, setTotalCount] = useState(0);
+	const [totalPrice, setTotalPrice] = useState(0);
+
+	useEffect(() => {
+		setTotalCount(getTotalCount);
+		setTotalPrice(getTotalPrice);
+	}, [cart]);
 
 	const addItem = (item, quantity) => {
 		if (!isInCart(item.id)) {
 			setCart([...cart, {item, quantity}]);
 		} else {
-			setCart(cart.map(obj => {
-				if (obj.item.id === item.id) return {...obj, quantity: obj.quantity + quantity};
-				return obj;
-			}));
+			setCart(cart.map(obj => obj.item.id === item.id ? {...obj, quantity: obj.quantity + quantity} : obj));
 		}
 	};
 
@@ -44,7 +48,7 @@ function CartProvider({children}) {
 	const getTotalPrice = () => cart.reduce((accumulator, obj) => accumulator + (obj.item.price * obj.quantity), 0);
 
 	return (
-		<CartContext.Provider value={{cart, addItem, removeItem, clear, getTotalCount, getTotalPrice}}>
+		<CartContext.Provider value={{cart, totalCount, totalPrice, addItem, removeItem, clear}}>
 			{children}
 		</CartContext.Provider>
 	);
