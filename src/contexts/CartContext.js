@@ -19,7 +19,14 @@ function CartProvider({children}) {
 		}
 	};
 
-	const removeItem = (itemId) => setCart(cart.filter(obj => obj.item.id !== itemId));
+	const removeItem = (itemId) => {
+		setCart(cart.filter(obj => obj.item.id !== itemId));
+
+		notification.success({
+			message: 'Producto eliminado exitosamente',
+			placement: 'topLeft'
+		});
+	};
 
 	const clear = () => {
 		setCart([]);
@@ -32,10 +39,12 @@ function CartProvider({children}) {
 
 	const isInCart = (itemId) => cart.some(obj => obj.item.id === itemId);
 
-	const getTotal = () => cart.reduce((accumulator, obj) => accumulator + obj.quantity, 0);
+	const getTotalCount = () => cart.reduce((accumulator, obj) => accumulator + obj.quantity, 0);
+
+	const getTotalPrice = () => cart.reduce((accumulator, obj) => accumulator + (obj.item.price * obj.quantity), 0);
 
 	return (
-		<CartContext.Provider value={{cart, addItem, removeItem, clear, getTotal}}>
+		<CartContext.Provider value={{cart, addItem, removeItem, clear, getTotalCount, getTotalPrice}}>
 			{children}
 		</CartContext.Provider>
 	);
