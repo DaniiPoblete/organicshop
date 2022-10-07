@@ -22,7 +22,7 @@ function Cart() {
 											icon={<CloseOutlined />}>
 									</Button>
 								</div>
-								<Image src={obj.item.featured_image} />
+								<Image src={obj.item.image} />
 								<div className={styles.detail}>
 									<Link to={`/product/${obj.item.id}`} key={obj.item.id}>
 										<p className={styles.title}>{obj.item.title}</p>

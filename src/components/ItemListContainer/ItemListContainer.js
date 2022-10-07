@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Breadcrumb, Empty, Pagination, Space, Spin } from 'antd';
-import { productList } from '../../assets/productList';
-import { customFetch } from '../../assets/customFetch';
+import { Breadcrumb, Empty, Space, Spin } from 'antd';
 import ItemList from '../ItemList/ItemList';
 import styles from './ItemListContainer.module.less';
 import { Link, useParams } from 'react-router-dom';
+import { db } from '../../firebase/firebase';
+import { getDocs, collection, query, where } from 'firebase/firestore';
 
 function ItemListContainer({greeting}) {
 	const [products, setProducts] = useState([]);
@@ -12,17 +12,17 @@ function ItemListContainer({greeting}) {
 
 	const {catId} = useParams();
 
-	const [page, setPage] = useState(1);
-	const [total, setTotal] = useState(0);
-	const [pageSize, setPageSize] = useState(0);
-
 	const getProducts = async () => {
 		try {
 			setIsLoading(true);
-			const data = await customFetch(productList, catId, 'categoryId', page);
-			setProducts(data.products);
-			setTotal(data.total);
-			setPageSize(data.pageSize);
+			const productsCollection = collection(db, 'products');
+			const catQuery = query(productsCollection, where('categoryId', '==', parseInt(catId)));
+			const data = await getDocs(catId ? catQuery : productsCollection);
+			const list = data.docs.map(product => {
+				return {...product.data(), id: product.id};
+			});
+
+			setProducts(list);
 		} catch (e) {
 			console.log('Error: ', e);
 		} finally {
@@ -31,13 +31,8 @@ function ItemListContainer({greeting}) {
 	};
 
 	useEffect(() => {
-		setPage(1);
 		getProducts();
 	}, [catId]);
-
-	useEffect(() => {
-		getProducts();
-	}, [page]);
 
 	return (
 		<div className={`container ${styles.container}`}>
@@ -60,8 +55,6 @@ function ItemListContainer({greeting}) {
 							</Breadcrumb>
 						}
 						<ItemList products={products} />
-						<Pagination current={page} total={total} pageSize={pageSize}
-									onChange={(page) => setPage(page)} />
 					</Space>
 					:
 					<Empty description={"No hay productos disponibles"} />)

@@ -8,7 +8,7 @@ function ItemDetail({product, onAdd, onCountChange, showCount}) {
 	return (
 		<Row gutter={[32, 32]}>
 			<Col xs={24} md={12}>
-				<Image src={product.featured_image} />
+				<Image src={product.image} />
 			</Col>
 			<Col xs={24} md={12}>
 				<h2>[{product.vendor}] {product.title}</h2>

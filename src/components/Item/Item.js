@@ -11,7 +11,7 @@ function Item({product}) {
 				cover={
 					<img
 						alt={product.handle}
-						src={product.featured_image}
+						src={product.image}
 						className={styles.image}
 					/>
 				}>

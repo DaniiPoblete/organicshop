@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import { customFetch } from '../../assets/customFetch';
 import { Breadcrumb, notification, Space, Spin } from 'antd';
 import styles from './ItemDetailContainer.module.less';
-import { productList } from '../../assets/productList';
 import { Link, useParams } from 'react-router-dom';
 import { useCart } from '../../contexts/CartContext';
+import { db } from '../../firebase/firebase';
+import { doc, getDoc, collection } from 'firebase/firestore';
 
 function ItemDetailContainer() {
 	const [product, setProduct] = useState({});
@@ -37,8 +37,11 @@ function ItemDetailContainer() {
 		const getProduct = async () => {
 			try {
 				setIsLoading(true);
-				const data = await customFetch(productList, prodId, 'id', 1);
-				setProduct(data.products[0]);
+				const productsCollection = collection(db, 'products');
+				const refDoc = doc(productsCollection, prodId);
+				const data = await getDoc(refDoc);
+
+				setProduct({...data.data(), id: data.id});
 			} catch (e) {
 				console.error('Error: ', e);
 			} finally {
