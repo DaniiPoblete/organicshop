@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 import styles from './ItemCount.module.less';
 
-function ItemCount({stock, initial, onAdd, onCountChange}) {
+function ItemCount({stock, initial, onAdd = undefined, onCountChange, showAddButton = true}) {
 	const [count, setCount] = useState(initial);
 
 	const decrease = () => {
@@ -24,9 +24,9 @@ function ItemCount({stock, initial, onAdd, onCountChange}) {
 				<span className={styles.count}>{count}</span>
 				<Button onClick={increase} disabled={count >= stock}>+</Button>
 			</div>
-			<Button type="primary" disabled={stock === 0} onClick={() => onAdd(count)}>
+			{showAddButton && <Button type="primary" disabled={stock === 0} onClick={() => onAdd(count)}>
 				Agregar al carrito
-			</Button>
+			</Button>}
 		</div>
 	);
 }

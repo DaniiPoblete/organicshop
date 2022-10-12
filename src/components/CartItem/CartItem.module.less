@@ -1,0 +1,50 @@
+@import "~antd/lib/style/index";
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
+  border-bottom: 1px solid @divider-color;
+
+  :global .ant-image {
+    align-self: center;
+  }
+
+  img {
+    width: 120px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .detail {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .totalPrice {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .listItem {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .detail {
+    margin-left: auto;
+  }
+}

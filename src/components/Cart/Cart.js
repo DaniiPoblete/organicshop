@@ -1,49 +1,37 @@
 import React from 'react';
 import { useCart } from '../../contexts/CartContext';
 import styles from './Cart.module.less';
-import { Button, Col, Empty, Image, Row } from 'antd';
+import { Button, Col, Empty, Row, Space } from 'antd';
 import { Link } from 'react-router-dom';
-import { CloseOutlined } from '@ant-design/icons';
+import CartItem from '../CartItem/CartItem';
+import CartForm from '../CartForm/CartForm';
 
 function Cart() {
-	const {cart, totalPrice, removeItem, clear} = useCart();
+	const {cart, totalPrice, removeItem, clear, updateItem, resetCart} = useCart();
 
 	return (
 		<div className={`container ${styles.container}`}>
-			<h2>Carrito de compras</h2>
+			<h2 className={styles.title}>Carrito de compras</h2>
 			{cart.length > 0 ?
-				(<Row gutter={[24, 24]}>
-					<Col xs={24} lg={16}>
-						<Button className={styles.clear} onClick={() => clear()}>Limpiar carrito</Button>
+				(<Space size={32} direction={"vertical"}>
+					<Button onClick={() => clear()}>Limpiar carrito</Button>
+					<div>
 						{cart.map(obj => (
-							<div className={styles.listItem} key={obj.item.id}>
-								<div className={styles.removeItem}>
-									<Button type="link" onClick={() => removeItem(obj.item.id)}
-											icon={<CloseOutlined />}>
-									</Button>
-								</div>
-								<Image src={obj.item.image} />
-								<div className={styles.detail}>
-									<Link to={`/product/${obj.item.id}`} key={obj.item.id}>
-										<p className={styles.title}>{obj.item.title}</p>
-									</Link>
-									<p className={styles.price}>{obj.item.price.toLocaleString("es-CL", {
-										style: "currency",
-										currency: "CLP"
-									})}</p>
-									<p>Cantidad: {obj.quantity}</p>
-								</div>
-							</div>
+							<CartItem key={obj.item.id} obj={obj} removeItem={removeItem} updateItem={updateItem} />
 						))}
-					</Col>
-					<Col xs={24} lg={8}>
-						<h3>El total de tu compra es:</h3>
-						<p className={styles.total}>{totalPrice.toLocaleString("es-CL", {
+					</div>
+					<div>
+						<p className={styles.total}>Total: {totalPrice.toLocaleString("es-CL", {
 							style: "currency",
 							currency: "CLP"
 						})}</p>
-					</Col>
-				</Row>)
+					</div>
+					<Row gutter={[24, 24]}>
+						<Col xs={24} md={14}>
+							<CartForm cart={cart} totalPrice={totalPrice} resetCart={resetCart} />
+						</Col>
+					</Row>
+				</Space>)
 				:
 				<Empty description={<p>No hay productos en el carrito. <Link to={"/"}>Ir al inicio</Link></p>} />
 			}

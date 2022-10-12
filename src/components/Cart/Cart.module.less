@@ -4,70 +4,12 @@
   flex-direction: column;
 }
 
-h2 {
+.title {
   margin-bottom: 2rem;
 }
 
-.clear {
-  margin-bottom: 1rem;
-}
-
-.listItem {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-  gap: 1rem;
-  border-bottom: 1px solid @divider-color;
-
-  &:last-of-type {
-    margin-bottom: 2rem;
-  }
-
-  .removeItem {
-    margin-left: auto;
-  }
-
-  :global .ant-image {
-    align-self: center;
-  }
-
-  img {
-    width: 200px;
-  }
-
-  .detail {
-    margin-left: 1rem;
-  }
-
-  .title {
-    font-size: 1.2rem;
-  }
-
-  .price {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-}
-
-h3 {
-  text-align: center;
-}
-
 .total {
-  text-align: center;
+  text-align: right;
   font-size: 1.4rem;
   font-weight: 500;
-}
-
-
-@media (min-width: 768px) {
-  .listItem {
-    flex-direction: row;
-    align-items: center;
-
-    .removeItem {
-      order: 1;
-      align-self: start;
-    }
-  }
 }

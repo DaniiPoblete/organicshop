@@ -17,9 +17,13 @@ function CartProvider({children}) {
 
 	const addItem = (item, quantity) => {
 		if (!isInCart(item.id)) {
-			setCart([...cart, {item, quantity}]);
+			setCart([...cart, {item, quantity, totalPrice: item.price * quantity}]);
 		} else {
-			setCart(cart.map(obj => obj.item.id === item.id ? {...obj, quantity: obj.quantity + quantity} : obj));
+			setCart(cart.map(obj => obj.item.id === item.id ? {
+				...obj,
+				quantity: obj.quantity + quantity,
+				totalPrice: obj.item.price * quantity
+			} : obj));
 		}
 	};
 
@@ -41,14 +45,24 @@ function CartProvider({children}) {
 		});
 	};
 
+	const updateItem = (item, quantity) => {
+		setCart(cart.map(obj => obj.item.id === item.id ? {
+			...obj,
+			quantity: quantity,
+			totalPrice: obj.item.price * quantity
+		} : obj));
+	};
+
+	const resetCart = () => setCart([]);
+
 	const isInCart = (itemId) => cart.some(obj => obj.item.id === itemId);
 
 	const getTotalCount = () => cart.reduce((accumulator, obj) => accumulator + obj.quantity, 0);
 
-	const getTotalPrice = () => cart.reduce((accumulator, obj) => accumulator + (obj.item.price * obj.quantity), 0);
+	const getTotalPrice = () => cart.reduce((accumulator, obj) => accumulator + obj.totalPrice, 0);
 
 	return (
-		<CartContext.Provider value={{cart, totalCount, totalPrice, addItem, removeItem, clear}}>
+		<CartContext.Provider value={{cart, totalCount, totalPrice, addItem, removeItem, clear, updateItem, resetCart}}>
 			{children}
 		</CartContext.Provider>
 	);
