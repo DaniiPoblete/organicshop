@@ -4,7 +4,8 @@ import { collection, addDoc, serverTimestamp, doc, updateDoc } from 'firebase/fi
 import { db } from '../../firebase/firebase';
 import styles from './CartForm.module.less';
 
-function CartForm({cart, totalPrice, resetCart}) {
+function CartForm({cart, totalPrice, resetCart, showModal}) {
+
 	const onFinish = async (formValues) => {
 		try {
 			const sellingCollection = collection(db, 'selling');
@@ -14,13 +15,11 @@ function CartForm({cart, totalPrice, resetCart}) {
 				total: totalPrice,
 				date: serverTimestamp()
 			};
+
 			const saveData = await addDoc(sellingCollection, data);
-
-			console.log('ID compra: ', saveData.id);
-			console.log('Compra finalizada: ', data);
-
 			await updateItemsStock();
 			resetCart();
+			showModal(saveData.id);
 		} catch (e) {
 			console.log('Error: ', e);
 		}
