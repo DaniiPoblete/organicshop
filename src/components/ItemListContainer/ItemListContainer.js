@@ -16,8 +16,8 @@ function ItemListContainer({greeting}) {
 		try {
 			setIsLoading(true);
 			const productsCollection = collection(db, 'products');
-			const catQuery = query(productsCollection, where('categoryId', '==', parseInt(catId)));
-			const data = await getDocs(catId ? catQuery : productsCollection);
+			const q = catId ? query(productsCollection, where('categoryHandle', '==', catId)) : productsCollection;
+			const data = await getDocs(q);
 			const list = data.docs.map(product => {
 				return {...product.data(), id: product.id};
 			});

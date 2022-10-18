@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 import styles from './ItemCount.module.less';
 
-function ItemCount({stock, initial, onAdd = undefined, onCountChange, showAddButton = true}) {
+function ItemCount({stock, initial, onAdd = () => {}, onCountChange, showAddButton = true}) {
 	const [count, setCount] = useState(initial);
 
 	const decrease = () => {

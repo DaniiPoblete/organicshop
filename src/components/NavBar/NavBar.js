@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Menu, Drawer } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import logo from '../../assets/logo.svg';
 import styles from './NavBar.module.less';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { categoriesList } from '../../assets/categoriesList';
+import { db } from '../../firebase/firebase';
+import { getDocs, collection } from 'firebase/firestore';
 
 function NavBar() {
 	const [visible, setVisible] = useState(false);
@@ -18,16 +19,37 @@ function NavBar() {
 		setVisible(false);
 	};
 
-	const categories = [];
+	const [categories, setCategories] = useState([]);
+
 	const location = useLocation();
 	const {pathname} = location;
 
-	categoriesList.forEach(cat => (
-		categories.push({
-			label: (<NavLink to={`/category/${cat.id}`} onClick={onClose}>{cat.name}</NavLink>),
-			key: `/category/${cat.id}`
-		})
-	));
+	const getCategories = async () => {
+		try {
+			const categoriesCollection = collection(db, 'categories');
+			const data = await getDocs(categoriesCollection);
+			const categoriesList = data.docs.map(product => {
+				return {...product.data(), id: product.id};
+			});
+
+			const categoriesMenu = [];
+
+			categoriesList.forEach(cat => {
+				categoriesMenu.push({
+					label: (<NavLink to={`/category/${cat.handle}`} onClick={onClose}>{cat.name}</NavLink>),
+					key: `/category/${cat.handle}`
+				});
+			});
+
+			setCategories(categoriesMenu);
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
+	useEffect(() => {
+		getCategories();
+	}, []);
 
 	return (
 		<nav>

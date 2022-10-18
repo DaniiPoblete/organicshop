@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form, Input } from 'antd';
 import { collection, addDoc, serverTimestamp, doc, updateDoc } from 'firebase/firestore';
 import { db } from '../../firebase/firebase';
 import styles from './CartForm.module.less';
 
 function CartForm({cart, totalPrice, resetCart, showModal}) {
+	const [isLoading, setIsLoading] = useState(false);
 
 	const onFinish = async (formValues) => {
 		try {
+			setIsLoading(true);
 			const sellingCollection = collection(db, 'selling');
 			const data = {
 				buyer: formValues,
@@ -22,6 +24,8 @@ function CartForm({cart, totalPrice, resetCart, showModal}) {
 			showModal(saveData.id);
 		} catch (e) {
 			console.log('Error: ', e);
+		} finally {
+			setIsLoading(false);
 		}
 	};
 
@@ -73,7 +77,7 @@ function CartForm({cart, totalPrice, resetCart, showModal}) {
 					<Input />
 				</Form.Item>
 				<Form.Item>
-					<Button className={styles.button} type="primary" htmlType="submit">
+					<Button className={styles.button} type="primary" htmlType="submit" loading={isLoading}>
 						Finalizar compra
 					</Button>
 				</Form.Item>
