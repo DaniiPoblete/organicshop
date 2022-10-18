@@ -12,12 +12,12 @@ function ItemDetailContainer() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [showCount, setShowCount] = useState(true);
 
-	const cart = useCart();
+	const {addItem, cartItemQuantity} = useCart();
 
 	const onAdd = (count, product) => {
 		setShowCount(false);
 
-		cart.addItem(product, count);
+		addItem(product, count);
 
 		notification.success({
 			description: `${count}x ${product.title}`,
@@ -65,7 +65,7 @@ function ItemDetailContainer() {
 							<Link to={"/"}>Inicio</Link>
 						</Breadcrumb.Item>
 						<Breadcrumb.Item>
-							<Link to={`/category/${product.categoryId}`}>{product.category}</Link>
+							<Link to={`/category/${product.categoryHandle}`}>{product.category}</Link>
 						</Breadcrumb.Item>
 						<Breadcrumb.Item>
 							{product.title}
@@ -76,6 +76,7 @@ function ItemDetailContainer() {
 						onAdd={onAdd}
 						onCountChange={onCountChange}
 						showCount={showCount}
+						currentStock={product.stock - cartItemQuantity(product.id)}
 					/>
 				</Space>
 			}

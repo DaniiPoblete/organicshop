@@ -4,7 +4,7 @@ import { Button, Col, Image, Rate, Row, Tabs } from 'antd';
 import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
 
-function ItemDetail({product, onAdd, onCountChange, showCount}) {
+function ItemDetail({product, onAdd, onCountChange, showCount, currentStock}) {
 	return (
 		<Row gutter={[32, 32]}>
 			<Col xs={24} md={12}>
@@ -19,10 +19,11 @@ function ItemDetail({product, onAdd, onCountChange, showCount}) {
 						{style: "currency", currency: "CLP"}
 					)}
 				</p>
+				<p className={styles.stock}>{product.stock} unidad(es) en stock.</p>
 				<div className={styles.count}>
 					{showCount ?
 						<ItemCount
-							stock={product.stock} initial={1}
+							stock={currentStock} initial={1}
 							onAdd={(count) => onAdd(count, product)}
 							onCountChange={(count) => onCountChange(count, product)}
 						/>
