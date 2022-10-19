@@ -1,23 +1,34 @@
 import React from 'react';
 import { useCart } from '../../contexts/CartContext';
 import styles from './Cart.module.less';
-import { Button, Col, Empty, Modal, Row, Space } from 'antd';
+import { Button, Col, Empty, Modal, Row, Space, Tooltip } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import CartItem from '../CartItem/CartItem';
 import CartForm from '../CartForm/CartForm';
+import { CopyOutlined } from '@ant-design/icons';
 
 function Cart() {
 	const {cart, totalPrice, removeItem, clear, updateItem, resetCart} = useCart();
 	const navigate = useNavigate();
 
+	const copy = (data) => {
+		navigator.clipboard.writeText(data);
+	};
+
 	const showModal = (id) => {
 		Modal.success({
 			title: '¡Compra finalizada!',
 			content: (
-				<div>
-					<br />
+				<div className={styles.modal}>
 					<h4>Gracias por comprar con nosotros.</h4>
-					<h4>El ID de tu compra es: <b>{id}</b></h4>
+					<h4>El código de tu compra es:</h4>
+					<div className={styles.copy}>
+						<Tooltip title="Copiar código" placement={'right'}>
+							<Button onClick={() => copy(id)}>
+								<b>{id}</b> <CopyOutlined />
+							</Button>
+						</Tooltip>
+					</div>
 				</div>
 			),
 			onOk() {

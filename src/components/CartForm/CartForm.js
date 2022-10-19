@@ -42,12 +42,13 @@ function CartForm({cart, totalPrice, resetCart, showModal}) {
 
 	const layout = {
 		labelCol: {
-			span: 4
+			span: 8
 		}
 	};
 
 	const validateMessages = {
-		required: 'Por favor, ingresa tu ${label}.',
+		required: 'Por favor, completa este campo.',
+		whitespace: 'Por favor, completa este campo.',
 		types: {
 			email: 'Por favor, ingresa un email válido.'
 		}
@@ -63,18 +64,34 @@ function CartForm({cart, totalPrice, resetCart, showModal}) {
 				  validateMessages={validateMessages}>
 				<Form.Item label="Nombre"
 						   name="name"
-						   rules={[{required: true}]}>
-					<Input />
+						   hasFeedback
+						   rules={[{required: true, whitespace: true}]}>
+					<Input placeholder={"Ingresa tu nombre"} />
 				</Form.Item>
 				<Form.Item label="Apellido"
 						   name="lastname"
-						   rules={[{required: true}]}>
-					<Input />
+						   hasFeedback
+						   rules={[{required: true, whitespace: true}]}>
+					<Input placeholder={"Ingresa tu apellido"} />
 				</Form.Item>
 				<Form.Item label="Email"
 						   name="email"
+						   hasFeedback
 						   rules={[{required: true, type: 'email'}]}>
-					<Input />
+					<Input placeholder={"Ingresa tu email"} />
+				</Form.Item>
+				<Form.Item label="Confirmar email"
+						   name="email2"
+						   hasFeedback
+						   rules={[{required: true}, ({getFieldValue}) => ({
+							   validator(_, value) {
+								   if (!value || getFieldValue('email') === value) {
+									   return Promise.resolve();
+								   }
+								   return Promise.reject('Los emails no coinciden.');
+							   }
+						   })]}>
+					<Input placeholder={"Confirma tu email"} />
 				</Form.Item>
 				<Form.Item>
 					<Button className={styles.button} type="primary" htmlType="submit" loading={isLoading}>

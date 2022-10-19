@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import { Breadcrumb, notification, Space, Spin } from 'antd';
+import { Breadcrumb, Empty, notification, Space, Spin } from 'antd';
 import styles from './ItemDetailContainer.module.less';
 import { Link, useParams } from 'react-router-dom';
 import { useCart } from '../../contexts/CartContext';
@@ -59,26 +59,29 @@ function ItemDetailContainer() {
 					<Spin size="large" />
 				</div>
 				:
-				<Space direction={"vertical"} size={32}>
-					<Breadcrumb>
-						<Breadcrumb.Item>
-							<Link to={"/"}>Inicio</Link>
-						</Breadcrumb.Item>
-						<Breadcrumb.Item>
-							<Link to={`/category/${product.categoryHandle}`}>{product.category}</Link>
-						</Breadcrumb.Item>
-						<Breadcrumb.Item>
-							{product.title}
-						</Breadcrumb.Item>
-					</Breadcrumb>
-					<ItemDetail
-						product={product}
-						onAdd={onAdd}
-						onCountChange={onCountChange}
-						showCount={showCount}
-						currentStock={product.stock - cartItemQuantity(product.id)}
-					/>
-				</Space>
+				product.title ?
+					<Space direction={"vertical"} size={32}>
+						<Breadcrumb>
+							<Breadcrumb.Item>
+								<Link to={"/"}>Inicio</Link>
+							</Breadcrumb.Item>
+							<Breadcrumb.Item>
+								<Link to={`/category/${product.categoryHandle}`}>{product.category}</Link>
+							</Breadcrumb.Item>
+							<Breadcrumb.Item>
+								{product.title}
+							</Breadcrumb.Item>
+						</Breadcrumb>
+						<ItemDetail
+							product={product}
+							onAdd={onAdd}
+							onCountChange={onCountChange}
+							showCount={showCount}
+							currentStock={product.stock - cartItemQuantity(product.id)}
+						/>
+					</Space>
+					:
+					<Empty description={"Este producto no existe"} />
 			}
 		</div>
 	);
