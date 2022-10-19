@@ -11,8 +11,11 @@ function CartProvider({children}) {
 		const savedCart = JSON.parse(storageCart);
 		return savedCart || [];
 	});
+
 	const [totalCount, setTotalCount] = useState(0);
 	const [totalPrice, setTotalPrice] = useState(0);
+
+	const [orderId, setOrderId] = useState(undefined);
 
 	useEffect(() => {
 		setTotalCount(getTotalCount);
@@ -71,7 +74,19 @@ function CartProvider({children}) {
 
 	return (
 		<CartContext.Provider
-			value={{cart, totalCount, totalPrice, addItem, removeItem, clear, updateItem, resetCart, cartItemQuantity}}>
+			value={{
+				cart,
+				totalCount,
+				totalPrice,
+				addItem,
+				removeItem,
+				clear,
+				updateItem,
+				resetCart,
+				cartItemQuantity,
+				setOrderId,
+				orderId
+			}}>
 			{children}
 		</CartContext.Provider>
 	);

@@ -32,7 +32,7 @@ function Cart() {
 				</div>
 			),
 			onOk() {
-				navigate("/");
+				navigate('/');
 			}
 		});
 	};
@@ -41,17 +41,23 @@ function Cart() {
 		<div className={`container ${styles.container}`}>
 			<h2 className={styles.title}>Carrito de compras</h2>
 			{cart.length > 0 ?
-				(<Space size={32} direction={"vertical"}>
+				(<Space size={32} direction={'vertical'}>
 					<Button onClick={() => clear()}>Limpiar carrito</Button>
 					<div>
 						{cart.map(obj => (
-							<CartItem key={obj.item.id} obj={obj} removeItem={removeItem} updateItem={updateItem} />
+							<CartItem
+								key={obj.item.id}
+								obj={obj}
+								removeItem={removeItem}
+								updateItem={updateItem}
+								isOrderView={false}
+							/>
 						))}
 					</div>
 					<div>
-						<p className={styles.total}>Total: {totalPrice.toLocaleString("es-CL", {
-							style: "currency",
-							currency: "CLP"
+						<p className={styles.total}>Total: {totalPrice.toLocaleString('es-CL', {
+							style: 'currency',
+							currency: 'CLP'
 						})}</p>
 					</div>
 					<Row gutter={[24, 24]}>
@@ -61,7 +67,7 @@ function Cart() {
 					</Row>
 				</Space>)
 				:
-				<Empty description={<p>No hay productos en el carrito. <Link to={"/"}>Ir al inicio</Link></p>} />
+				<Empty description={<p>No hay productos en el carrito. <Link to={'/'}>Ir al inicio</Link></p>} />
 			}
 		</div>
 	);

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Menu, Drawer } from 'antd';
+import { Button, Drawer, Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import logo from '../../assets/logo.svg';
 import styles from './NavBar.module.less';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { db } from '../../firebase/firebase';
-import { getDocs, collection } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
+import OrderWidget from '../OrderWigdet/OrderWidget';
 
 function NavBar() {
 	const [visible, setVisible] = useState(false);
@@ -55,13 +56,14 @@ function NavBar() {
 		<nav>
 			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />}
 					className={styles.collapsedMenuButton} />
-			<Link to={"/"}>
+			<Link to={'/'}>
 				<img src={logo} alt="logo" className={styles.logo} />
 			</Link>
 			<Menu items={categories} mode="horizontal" className={styles.menu} selectedKeys={[pathname]} />
-			<Link to={"/cart"}>
+			<Link to={'/cart'}>
 				<CartWidget />
 			</Link>
+			<OrderWidget />
 			<Drawer title="Navegación" placement="left" onClose={onClose} visible={visible} className={styles.drawer}>
 				<Menu items={categories} mode="vertical" selectedKeys={[pathname]} />
 			</Drawer>
