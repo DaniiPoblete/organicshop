@@ -5,9 +5,8 @@ import logo from '../../assets/logo.svg';
 import styles from './NavBar.module.less';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { db } from '../../firebase/firebase';
-import { collection, getDocs } from 'firebase/firestore';
 import OrderWidget from '../OrderWigdet/OrderWidget';
+import { useCategories } from '../../contexts/CategoriesContext';
 
 function NavBar() {
 	const [visible, setVisible] = useState(false);
@@ -20,52 +19,41 @@ function NavBar() {
 		setVisible(false);
 	};
 
-	const [categories, setCategories] = useState([]);
+	const [categoriesMenu, setCategoriesMenu] = useState([]);
 
 	const location = useLocation();
 	const {pathname} = location;
 
-	const getCategories = async () => {
-		try {
-			const categoriesCollection = collection(db, 'categories');
-			const data = await getDocs(categoriesCollection);
-			const categoriesList = data.docs.map(product => {
-				return {...product.data(), id: product.id};
-			});
+	const {categories} = useCategories();
 
-			const categoriesMenu = [];
-
-			categoriesList.forEach(cat => {
-				categoriesMenu.push({
-					label: (<NavLink to={`/category/${cat.handle}`} onClick={onClose}>{cat.name}</NavLink>),
-					key: `/category/${cat.handle}`
-				});
-			});
-
-			setCategories(categoriesMenu);
-		} catch (err) {
-			console.log(err);
-		}
+	const setMenu = () => {
+		setCategoriesMenu(categories.map(cat => ({
+			label: (<NavLink to={`/category/${cat.handle}`} onClick={onClose}>{cat.name}</NavLink>),
+			key: `/category/${cat.handle}`
+		})));
 	};
 
 	useEffect(() => {
-		getCategories();
-	}, []);
+		setMenu();
+	}, [categories]);
 
 	return (
 		<nav>
-			<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />}
-					className={styles.collapsedMenuButton} />
+			<div className={`${styles.optionsWrapper} ${styles.collapsedMenuButton}`}>
+				<Button type="primary" onClick={showDrawer} icon={<MenuOutlined />} />
+			</div>
 			<Link to={'/'}>
 				<img src={logo} alt="logo" className={styles.logo} />
 			</Link>
-			<Menu items={categories} mode="horizontal" className={styles.menu} selectedKeys={[pathname]} />
-			<Link to={'/cart'}>
-				<CartWidget />
-			</Link>
-			<OrderWidget />
+			<Menu items={categoriesMenu} mode="horizontal" className={styles.menu} selectedKeys={[pathname]} />
+			<div className={styles.optionsWrapper}>
+				<Link to={'/cart'}>
+					<CartWidget />
+				</Link>
+				<OrderWidget />
+			</div>
 			<Drawer title="Navegación" placement="left" onClose={onClose} visible={visible} className={styles.drawer}>
-				<Menu items={categories} mode="vertical" selectedKeys={[pathname]} />
+				<Menu items={categoriesMenu} mode="vertical" selectedKeys={[pathname]} />
 			</Drawer>
 		</nav>
 	);

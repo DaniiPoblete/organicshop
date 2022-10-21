@@ -8,6 +8,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart';
 import CartProvider from './contexts/CartContext';
 import Order from './components/Order/Order';
+import CategoriesProvider from './contexts/CategoriesContext';
 
 function App() {
 	const greeting = 'Productos';
@@ -15,7 +16,9 @@ function App() {
 		<>
 			<CartProvider>
 				<BrowserRouter>
-					<NavBar />
+					<CategoriesProvider>
+						<NavBar />
+					</CategoriesProvider>
 					<Routes>
 						<Route path={'/'} element={<ItemListContainer greeting={greeting} />} />
 						<Route path={'/category/:catId'} element={<ItemListContainer greeting={greeting} />} />

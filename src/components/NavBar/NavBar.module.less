@@ -2,12 +2,22 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  gap: 1rem;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.optionsWrapper {
+  min-width: 120px;
+
+  &:last-of-type {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+  }
 }
 
 .logo {
-  height: 70px;
+  width: 50px;
 }
 
 :global .ant-menu-horizontal, :global .ant-menu-vertical {
@@ -23,7 +33,6 @@ nav {
 
 .collapsedMenuButton {
   display: initial;
-  margin-right: 18px;
 }
 
 .drawer {
@@ -38,6 +47,14 @@ nav {
 }
 
 @media (min-width: 768px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .optionsWrapper {
+    min-width: 150px;
+  }
+
   .logo {
     width: 60px;
   }
@@ -46,7 +63,7 @@ nav {
     flex-grow: 1;
     justify-content: center;
     display: flex;
-    max-width: calc(100% - 194px - 2rem);
+    max-width: calc(100% - 4rem - 60px - 150px);
   }
 
   .collapsedMenuButton {
