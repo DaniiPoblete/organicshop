@@ -1,4 +1,4 @@
-# react-project
+# OrganicShop
 
 **Proyecto final del curso React Js - CoderHouse**
 
@@ -12,7 +12,7 @@
 Clonar el proyecto
 
 ```bash
-  git clone https://github.com/DaniiPoblete/react-project.git
+  git clone https://github.com/DaniiPoblete/organicshop.git
 ```
 
 Ir al directorio del proyecto
@@ -33,6 +33,10 @@ Iniciar servidor
   npm start
 ```
 
-### [http://localhost:3000](http://localhost:3000)
+### Screenshots del sitio
 
-#
+#### Vista escritorio Productos por Categoría
+![img](src/assets/screenshot-category.png)
+
+#### Vista escritorio Detalle de Producto
+![img](src/assets/screenshot-product.png)

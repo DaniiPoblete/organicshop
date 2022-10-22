@@ -36,7 +36,7 @@ function ItemListContainer({greeting}) {
 
 	return (
 		<div className={`container ${styles.container}`}>
-			{/*<h2>{greeting}</h2>*/}
+			<h2>{greeting}</h2>
 			{isLoading ?
 				<div className={styles.spinner}>
 					<Spin size="large" />
