@@ -22,7 +22,6 @@ function Footer() {
 
 	useEffect(() => {
 		setCategoryLists();
-		console.log(firstHalf);
 	}, [categories])
 
 	return (
