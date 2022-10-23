@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Button, Drawer, Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import logo from '../../assets/logo.svg';
@@ -19,23 +19,15 @@ function NavBar() {
 		setVisible(false);
 	};
 
-	const [categoriesMenu, setCategoriesMenu] = useState([]);
-
 	const location = useLocation();
 	const {pathname} = location;
 
 	const {categories} = useCategories();
 
-	const setMenu = () => {
-		setCategoriesMenu(categories.map(cat => ({
-			label: (<NavLink to={`/category/${cat.handle}`} onClick={onClose}>{cat.name}</NavLink>),
-			key: `/category/${cat.handle}`
-		})));
-	};
-
-	useEffect(() => {
-		setMenu();
-	}, [categories]);
+	const categoriesMenu = useMemo(() => categories.map(cat => ({
+		label: (<NavLink to={`/category/${cat.handle}`} onClick={onClose}>{cat.name}</NavLink>),
+		key: `/category/${cat.handle}`
+	})), [categories]);
 
 	return (
 		<nav>

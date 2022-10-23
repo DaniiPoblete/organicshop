@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useMemo } from 'react';
 import { useCategories } from '../../contexts/CategoriesContext';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.less';
@@ -7,22 +7,14 @@ import { Button, Col, Form, Input, Row, Tooltip } from 'antd';
 
 function Footer() {
 	const {categories} = useCategories();
-	const [firstHalf, setFirstHalf] = useState([]);
-	const [secondHalf, setSecondHalf] = useState([]);
 
-	const setCategoryLists = () => {
-		const half = Math.ceil(categories.length / 2);
-		setFirstHalf(categories.slice(0, half));
-		setSecondHalf(categories.slice(half));
-	}
+	const half = useMemo(() => Math.ceil(categories.length / 2), [categories]);
+	const firstHalf = useMemo(() => categories.slice(0, half), [categories]);
+	const secondHalf = useMemo(() => categories.slice(half), [categories]);
 
 	const onFinish = () => {
 		console.log('¡Próximamente!');
 	};
-
-	useEffect(() => {
-		setCategoryLists();
-	}, [categories])
 
 	return (
 		<div className={styles.wrapper}>
